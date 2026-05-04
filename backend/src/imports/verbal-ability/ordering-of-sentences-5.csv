@@ -1,0 +1,6 @@
+type,question,subject,topic,difficulty,option1,option2,option3,option4,answer,marks
+MCQ,"Arrange the parts to form a meaningful sentence: P: for the test Q: she studied hard R: because S: she wanted to pass",Verbal Ability,Ordering of Sentences,Easy,PQRS,QSPR,QRSP,SPQR,QRSP,1
+MCQ,"Arrange the parts to form a meaningful sentence: P: in the park Q: the children R: were playing S: happily",Verbal Ability,Ordering of Sentences,Easy,QPSR,QRSP,RQSP,PRQS,QRSP,1
+MCQ,"Arrange the parts to form a meaningful sentence: P: after the meeting Q: the manager discussed R: the new policy S: with the staff",Verbal Ability,Ordering of Sentences,Medium,PQRS,QPRS,QRSP,PRQS,PQRS,1
+MCQ,"Arrange the parts to form a meaningful sentence: P: to complete the project Q: the team worked late R: every night S: on time",Verbal Ability,Ordering of Sentences,Medium,QRPS,QPRS,PQRS,PRQS,QPRS,1
+MCQ,"Arrange the parts to form a meaningful sentence: P: although it was raining Q: they continued R: their journey S: without stopping",Verbal Ability,Ordering of Sentences,Hard,PQRS,PSQR,QRPS,PQSR,PQRS,1

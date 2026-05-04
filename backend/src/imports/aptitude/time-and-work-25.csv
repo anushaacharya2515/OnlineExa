@@ -1,0 +1,26 @@
+type,question,subject,topic,difficulty,option1,option2,option3,option4,answer,marks
+MCQ,"A can complete a piece of work in 10 days. How much work does A do in 1 day?",Aptitude,Time and Work,Easy,1/5,1/10,1/15,1/20,1/10,1
+MCQ,"B can complete a work in 15 days. What fraction of work does B complete in 1 day?",Aptitude,Time and Work,Easy,1/10,1/12,1/15,1/18,1/15,1
+MCQ,"A can finish a work in 12 days and B in 18 days. In how many days can they finish it together?",Aptitude,Time and Work,Easy,6.2,7.2,8.2,9.2,7.2,1
+MCQ,"A does a work in 20 days and B does the same work in 30 days. How long will they take together?",Aptitude,Time and Work,Easy,10 days,12 days,15 days,18 days,12 days,1
+MCQ,"If A can complete a work in 8 days, what percent of the work does A complete in one day?",Aptitude,Time and Work,Easy,10%,12.5%,15%,20%,12.5%,1
+MCQ,"A and B together can complete a work in 6 days. If A alone can do it in 10 days, then B alone can do it in:",Aptitude,Time and Work,Medium,12 days,15 days,18 days,20 days,15 days,1
+MCQ,"A can complete a work in 15 days and B in 10 days. They work together for 2 days. What fraction of work is left?",Aptitude,Time and Work,Medium,1/5,1/3,7/15,8/15,8/15,1
+MCQ,"A can do a job in 24 days. B is 50% more efficient than A. In how many days can B alone do the job?",Aptitude,Time and Work,Medium,12 days,14 days,16 days,18 days,16 days,1
+MCQ,"A is twice as efficient as B. If B can complete a work in 18 days, then A can complete it in:",Aptitude,Time and Work,Easy,6 days,8 days,9 days,12 days,9 days,1
+MCQ,"A can complete a work in 16 days and B in 24 days. They work together for 4 days. What part of the work is completed?",Aptitude,Time and Work,Medium,1/2,5/12,7/12,2/3,5/12,1
+MCQ,"12 men can complete a work in 15 days. How many days will 18 men take to complete the same work?",Aptitude,Time and Work,Medium,8 days,10 days,12 days,14 days,10 days,1
+MCQ,"8 workers can build a wall in 20 days. How many workers are needed to build it in 10 days?",Aptitude,Time and Work,Easy,12,14,16,18,16,1
+MCQ,"If 6 women can complete a work in 18 days, how many women are needed to finish it in 9 days?",Aptitude,Time and Work,Easy,9,10,11,12,12,1
+MCQ,"A can finish a work in 14 days and B in 21 days. They start together, but A leaves after 4 days. In how many more days will B finish the remaining work?",Aptitude,Time and Work,Hard,6,7,8,9,6,1
+MCQ,"A and B together can complete a work in 5 days. B and C together can do it in 6 days. A and C together can do it in 7 days. In how many days can all three together complete the work?",Aptitude,Time and Work,Hard,3.2,3.5,4.2,4.5,3.5,1
+MCQ,"A can complete a work in 9 days and B in 12 days. They work together for 3 days. What fraction of the work remains?",Aptitude,Time and Work,Medium,1/3,1/4,5/12,7/12,5/12,1
+MCQ,"A does half of a work in 6 days. At the same rate, in how many days will A complete the whole work?",Aptitude,Time and Work,Easy,10,11,12,13,12,1
+MCQ,"If 15 men can finish a work in 12 days, how many men can finish it in 20 days?",Aptitude,Time and Work,Medium,8,9,10,11,9,1
+MCQ,"A can do a work in 30 days, B in 20 days, and C in 15 days. In how many days can they complete the work together?",Aptitude,Time and Work,Medium,6.25,6.67,7.5,8.25,6.67,1
+MCQ,"A pipe can fill a tank in 12 hours and another pipe can fill it in 18 hours. In how many hours will both fill the tank together?",Aptitude,Time and Work,Medium,6.2,7.2,8.2,9.2,7.2,1
+MCQ,"A can complete a work in 25 days. After working for 5 days, what fraction of the work is left?",Aptitude,Time and Work,Easy,3/5,4/5,2/5,1/5,4/5,1
+MCQ,"If A is 25% more efficient than B and B can complete a work in 20 days, then A can complete it in:",Aptitude,Time and Work,Medium,14 days,15 days,16 days,18 days,16 days,1
+MCQ,"18 workers can complete a job in 16 days. After 4 days, 6 workers leave. In how many more days will the remaining workers finish the job?",Aptitude,Time and Work,Hard,18,20,22,24,20,1
+MCQ,"A and B can do a work together in 8 days. If A alone takes 12 days, how many days will B alone take?",Aptitude,Time and Work,Medium,18,20,22,24,24,1
+MCQ,"A can complete a work in 40 days and B in 24 days. They work on alternate days starting with A. In how many days is the work completed?",Aptitude,Time and Work,Hard,28,29,30,31,30,1

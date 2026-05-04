@@ -1,0 +1,27 @@
+type,question,subject,topic,difficulty,option1,option2,option3,option4,answer,marks
+MCQ,A shopkeeper buys an article for Rs. 500 and sells it for Rs. 600. What is the profit percent?,Aptitude,Profit and Loss,Easy,10%,15%,20%,25%,20%,1
+MCQ,An article is bought for Rs. 800 and sold for Rs. 720. What is the loss percent?,Aptitude,Profit and Loss,Easy,8%,10%,12%,15%,10%,1
+MCQ,"If the cost price of an item is Rs. 250 and the profit is Rs. 50 what is the selling price?",Aptitude,Profit and Loss,Easy,280,290,300,310,300,1
+MCQ,A trader sells a product for Rs. 450 after buying it for Rs. 375. Find the profit.,Aptitude,Profit and Loss,Easy,65,70,75,80,75,1
+MCQ,If an item is sold at Rs. 900 with a loss of Rs. 100, what is its cost price?,Aptitude,Profit and Loss,Easy,950,1000,1050,1100,1000,1
+MCQ,A man buys a chair for Rs. 1200 and sells it at a profit of 25%. Find the selling price.,Aptitude,Profit and Loss,Easy,1400,1450,1500,1550,1500,1
+MCQ,An article is sold for Rs. 840 at a loss of 16%. What is its cost price?,Aptitude,Profit and Loss,Medium,900,950,1000,1050,1000,1
+MCQ,If the selling price of 12 pens is equal to the cost price of 15 pens, what is the loss percent?,Aptitude,Profit and Loss,Medium,15%,20%,25%,30%,20%,1
+MCQ,A shopkeeper marks an item at Rs. 1000 and allows a discount of 10%. If the cost price is Rs. 850, what is the profit percent?,Aptitude,Profit and Loss,Medium,4%,5%,5.88%,7%,5.88%,1
+MCQ,By selling an article for Rs. 540, a man gains 20%. What is the cost price?,Aptitude,Profit and Loss,Easy,430,440,450,460,450,1
+MCQ,If a product is sold at 15% profit for Rs. 690, find its cost price.,Aptitude,Profit and Loss,Medium,500,550,600,650,600,1
+MCQ,A trader sold an article at 10% loss for Rs. 360. At what price should he sell it to gain 20%?,Aptitude,Profit and Loss,Medium,460,470,480,490,480,1
+MCQ,The cost price of 20 articles is equal to the selling price of 16 articles. What is the profit percent?,Aptitude,Profit and Loss,Medium,20%,25%,30%,35%,25%,1
+MCQ,An item is sold for Rs. 525 at a profit of 5%. Find the cost price.,Aptitude,Profit and Loss,Medium,500,505,510,515,500,1
+MCQ,"If a man sells two articles for Rs. 990 each, gaining 10% on one and losing 10% on the other, what is the overall result?",Aptitude,Profit and Loss,Hard,No profit no loss,Gain of Rs. 10,Loss of Rs. 10,Loss of Rs. 20,Loss of Rs. 10,1
+MCQ,A retailer marks goods 40% above cost price and allows a discount of 10% on the marked price. What is his profit percent?,Aptitude,Profit and Loss,Hard,20%,24%,26%,30%,26%,1
+MCQ,"A fruit seller buys oranges at 8 for Rs. 40 and sells them at 10 for Rs. 60. What is the profit percent?",Aptitude,Profit and Loss,Hard,15%,18%,20%,25%,20%,1
+MCQ,"If an article is sold at 20% profit instead of 10% loss, the selling price increases by Rs. 180. What is the cost price?",Aptitude,Profit and Loss,Hard,500,550,600,650,600,1
+MCQ,"A shopkeeper sells an article at a loss of 12%. If he had sold it for Rs. 90 more, he would have gained 8%. Find the cost price.",Aptitude,Profit and Loss,Hard,400,450,500,550,450,1
+MCQ,The selling price of an article is Rs. 960 after a discount of 20% on the marked price. Find the marked price.,Aptitude,Profit and Loss,Easy,1100,1150,1200,1250,1200,1
+MCQ,An article is marked 25% above cost price and sold at a discount of 4%. What is the profit percent?,Aptitude,Profit and Loss,Medium,18%,19%,20%,21%,20%,1
+MCQ,By selling a book for Rs. 368, a seller makes a loss of 8%. At what price should it be sold to gain 15%?,Aptitude,Profit and Loss,Hard,450,460,470,480,460,1
+MCQ,A trader gains 25% by selling an article for Rs. 2500. Find the cost price.,Aptitude,Profit and Loss,Easy,1800,1900,2000,2100,2000,1
+MCQ,If the cost price of 15 articles is equal to the selling price of 12 articles, what is the profit percent?,Aptitude,Profit and Loss,Medium,20%,22%,25%,30%,25%,1
+MCQ,"A man buys an article for Rs. 640 and spends Rs. 60 on repairs. If he sells it for Rs. 840, what is the profit percent on the total cost?",Aptitude,Profit and Loss,Medium,18%,20%,22%,25%,20%,1
+MCQ,"What is 1+2",Aptitude,Profit and Loss,Easy,3,1,2,4,1

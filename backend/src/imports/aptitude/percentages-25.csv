@@ -1,0 +1,26 @@
+type,question,subject,topic,difficulty,option1,option2,option3,option4,answer,marks
+MCQ,"What is 20% of 250?",Aptitude,Percentages,Easy,40,45,50,55,50,1
+MCQ,"What is 35% of 400?",Aptitude,Percentages,Easy,120,130,140,150,140,1
+MCQ,"A number is increased from 200 to 260. What is the percentage increase?",Aptitude,Percentages,Easy,20%,25%,30%,35%,30%,1
+MCQ,"A price falls from Rs. 500 to Rs. 425. What is the percentage decrease?",Aptitude,Percentages,Easy,10%,12%,15%,18%,15%,1
+MCQ,"12 is what percent of 48?",Aptitude,Percentages,Easy,20%,25%,30%,35%,25%,1
+MCQ,"45% of a number is 90. What is the number?",Aptitude,Percentages,Medium,180,190,200,210,200,1
+MCQ,"If 80% of a number is 160, then 25% of the same number is:",Aptitude,Percentages,Medium,40,45,50,55,50,1
+MCQ,"A student scored 360 out of 450. What percentage did the student score?",Aptitude,Percentages,Easy,75%,78%,80%,82%,80%,1
+MCQ,"A quantity is increased by 25% and becomes 500. What was the original quantity?",Aptitude,Percentages,Medium,380,390,400,410,400,1
+MCQ,"A number is decreased by 20% and becomes 240. What was the original number?",Aptitude,Percentages,Medium,280,290,300,320,300,1
+MCQ,"What is 150% of 80?",Aptitude,Percentages,Easy,100,110,120,130,120,1
+MCQ,"A salary of Rs. 24000 is increased by 15%. What is the new salary?",Aptitude,Percentages,Easy,27000,27600,28000,28400,27600,1
+MCQ,"A shirt marked Rs. 800 is sold at a 10% discount. What is the discount amount?",Aptitude,Percentages,Easy,60,70,80,90,80,1
+MCQ,"If x is increased by 10% and then decreased by 10%, the net change is:",Aptitude,Percentages,Medium,0%,1% decrease,1% increase,2% decrease,1% decrease,1
+MCQ,"A population increases by 20% in one year and then by 25% in the next year. What is the total percentage increase?",Aptitude,Percentages,Hard,40%,45%,50%,55%,50%,1
+MCQ,"What percent of 600 is 72?",Aptitude,Percentages,Easy,10%,12%,14%,16%,12%,1
+MCQ,"If 18% of a number is 54, what is 40% of that number?",Aptitude,Percentages,Medium,100,110,120,130,120,1
+MCQ,"The price of an article is reduced by 25%. To restore it to the original price, the new price must be increased by:",Aptitude,Percentages,Hard,25%,30%,33.33%,40%,33.33%,1
+MCQ,"A number when increased by 40% gives 98. What is the number?",Aptitude,Percentages,Medium,60,65,70,75,70,1
+MCQ,"A candidate secures 30% marks and fails by 12 marks. Another candidate secures 45% marks and gets 18 marks more than the pass marks. What are the maximum marks?",Aptitude,Percentages,Hard,180,200,220,240,200,1
+MCQ,"The value of a machine depreciates by 10% every year. If its present value is Rs. 81000 after one year, what was its value a year ago?",Aptitude,Percentages,Medium,85000,88000,90000,92000,90000,1
+MCQ,"In a class, 60% are boys. If there are 24 girls, what is the total number of students?",Aptitude,Percentages,Medium,50,55,60,65,60,1
+MCQ,"If A's income is 25% more than B's, then B's income is what percent less than A's?",Aptitude,Percentages,Hard,15%,18%,20%,25%,20%,1
+MCQ,"A village population is 8000. If it increases by 5% annually, what will it be after one year?",Aptitude,Percentages,Easy,8200,8300,8400,8500,8400,1
+MCQ,"The price of sugar rises by 25%. By what percentage should consumption be reduced so that expenditure remains the same?",Aptitude,Percentages,Hard,15%,18%,20%,25%,20%,1

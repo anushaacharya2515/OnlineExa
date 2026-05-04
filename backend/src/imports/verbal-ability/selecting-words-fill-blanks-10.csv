@@ -1,0 +1,11 @@
+type,question,subject,topic,difficulty,answer,marks
+FILL_BLANK,"Choose the correct word to complete the sentence: She was very ______ after hearing the good news.",Verbal Ability,Selecting Words,Easy,happy,1
+FILL_BLANK,"Choose the correct word to complete the sentence: The teacher asked the students to remain ______ during the assembly.",Verbal Ability,Selecting Words,Easy,silent,1
+FILL_BLANK,"Choose the correct word to complete the sentence: He is known for his ______ behavior and kindness.",Verbal Ability,Selecting Words,Easy,polite,1
+FILL_BLANK,"Choose the correct word to complete the sentence: The sky became dark and ______ before the storm.",Verbal Ability,Selecting Words,Medium,cloudy,1
+FILL_BLANK,"Choose the correct word to complete the sentence: She completed the project in a very ______ manner.",Verbal Ability,Selecting Words,Medium,efficient,1
+FILL_BLANK,"Choose the correct word to complete the sentence: The old building was finally ______ because it was unsafe.",Verbal Ability,Selecting Words,Medium,demolished,1
+FILL_BLANK,"Choose the correct word to complete the sentence: His explanation was so ______ that everyone understood the concept easily.",Verbal Ability,Selecting Words,Medium,clear,1
+FILL_BLANK,"Choose the correct word to complete the sentence: The manager appreciated her ______ approach to solving the problem.",Verbal Ability,Selecting Words,Hard,practical,1
+FILL_BLANK,"Choose the correct word to complete the sentence: The scientist made a ______ discovery after years of research.",Verbal Ability,Selecting Words,Hard,remarkable,1
+FILL_BLANK,"Choose the correct word to complete the sentence: The speaker’s words had a deep ______ on the audience.",Verbal Ability,Selecting Words,Hard,impact,1

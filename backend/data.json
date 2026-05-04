@@ -1,0 +1,3509 @@
+{
+  "users": [
+    {
+      "id": "a6f494ed-3751-4b3a-af00-f5367104a885",
+      "name": "System Admin",
+      "email": "admin@exam.com",
+      "passwordHash": "$2a$10$ennH.APzhiUq5O7a.RRTv.DKxwSqWgC.hOKOb8sbnJVq7fw932Fzi",
+      "role": "admin",
+      "createdAt": "2026-03-03T07:17:46.825Z"
+    },
+    {
+      "id": "3b979264-0ac8-4fe3-b6b0-32203d9c0af4",
+      "name": "Anusha Acharya",
+      "email": "acharyaanusha126@gmail.com",
+      "passwordHash": "$2a$10$SbVF7LPFSu8Fo7WrdaIFve46IkcRnQCqbEYiVuNVl64WbbYymBCae",
+      "role": "student",
+      "createdAt": "2026-03-03T07:42:34.298Z"
+    },
+    {
+      "id": "6006ab20-042a-4e1d-befd-87c71e3c9486",
+      "name": "Anagha",
+      "email": "anagha@gmil.com",
+      "passwordHash": "$2a$10$f2siS49hFkE40s/kVSXLD.R/UI3JquowKpkIm3q5a3FMUHMgwlXFy",
+      "role": "student",
+      "createdAt": "2026-03-05T03:47:18.348Z"
+    },
+    {
+      "id": "4341b6fe-e61f-4e74-9fbe-2f116c09651b",
+      "name": "Apeksha Acharya",
+      "email": "apeksha123@gmail.com",
+      "passwordHash": "$2a$10$H.bV6sRDnQ6eblmSczQPEONP3jW1WNxKw8FOrD9w6TTo4tzARAv.2",
+      "role": "student",
+      "createdAt": "2026-03-08T13:53:55.561Z"
+    },
+    {
+      "id": "db8ee0fa-4d19-418b-9a40-feed67cea4ec",
+      "name": "Swathi",
+      "email": "swathidevadiga1312@gmail.com",
+      "passwordHash": "$2a$10$.eW4skV95LAQHamL.CmXQuzYrgDmXm3tLYBZQjGjWjF/dXwmN88L.",
+      "role": "student",
+      "createdAt": "2026-03-23T10:08:02.529Z"
+    }
+  ],
+  "questions": [
+    {
+      "id": "0ab61f73-b745-4a95-866b-af58263962b4",
+      "type": "MCQ",
+      "text": "What is hardware?",
+      "options": [
+        "Programs and applications",
+        "Physical components of computer",
+        "Internet services",
+        "Operating system"
+      ],
+      "correctAnswer": "Physical components of computer",
+      "passage": "",
+      "pairs": [],
+      "matrixRows": [],
+      "matrixCols": [],
+      "integerRange": null,
+      "assertion": "",
+      "reason": "",
+      "subject": "Hardware",
+      "difficulty": "Easy",
+      "topic": "Input & Output Devices",
+      "marks": 1,
+      "createdAt": "2026-03-24T05:26:23.129Z",
+      "updatedAt": "2026-03-30T09:48:26.954Z"
+    },
+    {
+      "id": "af752e44-830e-47f9-9747-4a50ce5090a5",
+      "createdAt": "2026-03-24T10:41:39.464Z",
+      "subject": "General",
+      "topic": "General",
+      "difficulty": "Medium",
+      "type": "SINGLE_MCQ",
+      "text": "Which data structure follows FIFO order?",
+      "options": [
+        "Stack",
+        "Queue",
+        "Tree",
+        "Graph"
+      ],
+      "correctAnswer": "Queue",
+      "marks": 1
+    },
+    {
+      "id": "3bae977a-2ac9-4e7d-b574-b63830b35bbb",
+      "createdAt": "2026-03-24T10:41:39.503Z",
+      "subject": "General",
+      "topic": "General",
+      "difficulty": "Medium",
+      "type": "MSQ",
+      "text": "Which of the following are prime numbers?",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "correctAnswer": [
+        "2",
+        "3",
+        "5"
+      ],
+      "marks": 2
+    },
+    {
+      "id": "f5b9d3b1-7385-4246-a155-e5cbecbd80ed",
+      "createdAt": "2026-03-24T10:41:39.503Z",
+      "subject": "General",
+      "topic": "General",
+      "difficulty": "Medium",
+      "type": "NAT",
+      "text": "What is 12 x 12?",
+      "correctAnswer": 144,
+      "marks": 1
+    },
+    {
+      "id": "b0d79bf3-15f8-4b4f-b49f-46c0ed621a42",
+      "createdAt": "2026-03-24T10:41:39.503Z",
+      "subject": "General",
+      "topic": "General",
+      "difficulty": "Medium",
+      "type": "INTEGER_RANGE",
+      "text": "Enter any integer between 10 and 15.",
+      "integerRange": {
+        "min": 10,
+        "max": 15
+      },
+      "correctAnswer": "10-15",
+      "marks": 1
+    },
+    {
+      "id": "4b2d8962-92da-4987-8687-4dfa6f8fa41f",
+      "createdAt": "2026-03-24T10:41:39.503Z",
+      "subject": "General",
+      "topic": "General",
+      "difficulty": "Medium",
+      "type": "ASSERTION_REASON",
+      "text": "Select the correct relation for the given assertion and reason.",
+      "assertion": "Earth revolves around the Sun.",
+      "reason": "The Sun's gravitational pull keeps Earth in orbit.",
+      "options": [
+        "A and R are true, R explains A",
+        "A and R are true, R does not explain A",
+        "A is true, R is false",
+        "A is false, R is true"
+      ],
+      "correctAnswer": "A and R are true, R explains A",
+      "marks": 2
+    },
+    {
+      "id": "cf7cc3d6-813c-4f2e-9e65-c9c3c5d6954f",
+      "createdAt": "2026-03-24T10:41:39.503Z",
+      "subject": "General",
+      "topic": "General",
+      "difficulty": "Medium",
+      "type": "PARAGRAPH_CASE",
+      "text": "Based on the paragraph, identify the correct process.",
+      "passage": "Photosynthesis is a process where green plants use sunlight to synthesize foods from carbon dioxide and water.",
+      "options": [
+        "Respiration",
+        "Photosynthesis",
+        "Fermentation",
+        "Transpiration"
+      ],
+      "correctAnswer": "Photosynthesis",
+      "marks": 2
+    },
+    {
+      "id": "baa2c536-e239-4f23-a41f-5c6d33035994",
+      "createdAt": "2026-03-24T10:41:39.503Z",
+      "subject": "General",
+      "topic": "General",
+      "difficulty": "Medium",
+      "type": "SINGLE_MCQ",
+      "text": "Which protocol is primarily used for secure web browsing?",
+      "options": [
+        "HTTP",
+        "FTP",
+        "HTTPS",
+        "SMTP"
+      ],
+      "correctAnswer": "HTTPS",
+      "marks": 1
+    },
+    {
+      "id": "5d90bd99-b863-430d-897e-fdd65f10bf79",
+      "createdAt": "2026-03-24T10:41:39.503Z",
+      "subject": "General",
+      "topic": "General",
+      "difficulty": "Medium",
+      "type": "SINGLE_MCQ",
+      "text": "Which gas do plants absorb from the atmosphere?",
+      "options": [
+        "Oxygen",
+        "Hydrogen",
+        "Carbon dioxide",
+        "Nitrogen"
+      ],
+      "correctAnswer": "Carbon dioxide",
+      "marks": 1
+    },
+    {
+      "id": "82a92bf2-2de2-4855-a597-a3a097ebf9e1",
+      "createdAt": "2026-03-24T10:41:39.503Z",
+      "subject": "General",
+      "topic": "General",
+      "difficulty": "Medium",
+      "type": "MSQ",
+      "text": "Select all valid object-oriented programming concepts.",
+      "options": [
+        "Encapsulation",
+        "Inheritance",
+        "Polymorphism",
+        "Compilation"
+      ],
+      "correctAnswer": [
+        "Encapsulation",
+        "Inheritance",
+        "Polymorphism"
+      ],
+      "marks": 2
+    },
+    {
+      "id": "326a5ad0-7047-4715-b86d-a8b215b56758",
+      "createdAt": "2026-03-24T10:41:39.503Z",
+      "subject": "General",
+      "topic": "General",
+      "difficulty": "Medium",
+      "type": "MSQ",
+      "text": "Which of these are JavaScript frameworks/libraries?",
+      "options": [
+        "React",
+        "Angular",
+        "Django",
+        "Vue"
+      ],
+      "correctAnswer": [
+        "React",
+        "Angular",
+        "Vue"
+      ],
+      "marks": 2
+    },
+    {
+      "id": "e0779034-a735-45cd-b5ad-611ab20b85c2",
+      "createdAt": "2026-03-24T10:41:39.503Z",
+      "subject": "General",
+      "topic": "General",
+      "difficulty": "Medium",
+      "type": "NAT",
+      "text": "What is the square root of 256?",
+      "correctAnswer": 16,
+      "marks": 1
+    },
+    {
+      "id": "46d4cd6a-6afc-4293-a15d-a11910ddb5b8",
+      "createdAt": "2026-03-24T10:41:39.503Z",
+      "subject": "General",
+      "topic": "General",
+      "difficulty": "Medium",
+      "type": "NAT",
+      "text": "If x = 7, compute 3x + 2.",
+      "correctAnswer": 23,
+      "marks": 1
+    },
+    {
+      "id": "82fa9314-8f2e-4051-86e7-62d55105e208",
+      "createdAt": "2026-03-24T10:41:39.503Z",
+      "subject": "General",
+      "topic": "General",
+      "difficulty": "Medium",
+      "type": "INTEGER_RANGE",
+      "text": "Enter any integer between 1 and 5.",
+      "integerRange": {
+        "min": 1,
+        "max": 5
+      },
+      "correctAnswer": "1-5",
+      "marks": 1
+    },
+    {
+      "id": "830c07f7-c6a9-4d9e-84d6-5a76c7c25a60",
+      "createdAt": "2026-03-24T10:41:39.503Z",
+      "subject": "General",
+      "topic": "General",
+      "difficulty": "Medium",
+      "type": "INTEGER_RANGE",
+      "text": "Enter an integer in the range 20 to 25.",
+      "integerRange": {
+        "min": 20,
+        "max": 25
+      },
+      "correctAnswer": "20-25",
+      "marks": 1
+    },
+    {
+      "id": "ce59a78f-9915-4cf5-b1ab-d2aaff0920a0",
+      "createdAt": "2026-03-24T10:41:39.503Z",
+      "subject": "General",
+      "topic": "General",
+      "difficulty": "Medium",
+      "type": "PARAGRAPH_CASE",
+      "text": "From the paragraph, which layer handles routing in the OSI model?",
+      "passage": "The OSI model includes seven layers. The Network layer is responsible for routing and logical addressing.",
+      "options": [
+        "Data Link",
+        "Transport",
+        "Network",
+        "Physical"
+      ],
+      "correctAnswer": "Network",
+      "marks": 2
+    },
+    {
+      "id": "2bce322f-19d8-4f1f-9dda-0c7f64b2065d",
+      "createdAt": "2026-03-24T10:41:39.503Z",
+      "subject": "General",
+      "topic": "General",
+      "difficulty": "Medium",
+      "type": "ASSERTION_REASON",
+      "text": "Select the correct relation for the given assertion and reason.",
+      "assertion": "All squares are rectangles.",
+      "reason": "A square has four right angles.",
+      "options": [
+        "A and R are true, R explains A",
+        "A and R are true, R does not explain A",
+        "A is true, R is false",
+        "A is false, R is true"
+      ],
+      "correctAnswer": "A and R are true, R explains A",
+      "marks": 2
+    },
+    {
+      "id": "4c87bcb0-2168-4d39-937e-ab94f7c7f2aa",
+      "createdAt": "2026-03-24T10:41:39.503Z",
+      "subject": "General",
+      "topic": "General",
+      "difficulty": "Medium",
+      "type": "ASSERTION_REASON",
+      "text": "Select the correct relation for the given assertion and reason.",
+      "assertion": "Water boils at 100°C at sea level.",
+      "reason": "Boiling point depends on atmospheric pressure.",
+      "options": [
+        "A and R are true, R explains A",
+        "A and R are true, R does not explain A",
+        "A is true, R is false",
+        "A is false, R is true"
+      ],
+      "correctAnswer": "A and R are true, R explains A",
+      "marks": 2
+    },
+    {
+      "id": "789ed766-ef72-4911-9b84-1fbfdf14967b",
+      "createdAt": "2026-03-24T10:41:39.503Z",
+      "subject": "General",
+      "topic": "General",
+      "difficulty": "Medium",
+      "type": "DRAG_DROP",
+      "text": "Match each country with its capital.",
+      "pairs": [
+        {
+          "left": "India",
+          "right": "New Delhi"
+        },
+        {
+          "left": "Japan",
+          "right": "Tokyo"
+        },
+        {
+          "left": "France",
+          "right": "Paris"
+        }
+      ],
+      "correctAnswer": {
+        "India": "New Delhi",
+        "Japan": "Tokyo",
+        "France": "Paris"
+      },
+      "marks": 3
+    },
+    {
+      "id": "2e5b158c-2cb2-429e-ad2b-af14e6373f69",
+      "createdAt": "2026-03-24T10:41:39.503Z",
+      "subject": "General",
+      "topic": "General",
+      "difficulty": "Medium",
+      "type": "MATRIX",
+      "text": "Match programming languages to their common use areas.",
+      "matrixRows": [
+        "Python",
+        "JavaScript",
+        "SQL"
+      ],
+      "matrixCols": [
+        "Web",
+        "Data",
+        "Database"
+      ],
+      "correctAnswer": {
+        "Python": [
+          "Data",
+          "Web"
+        ],
+        "JavaScript": [
+          "Web"
+        ],
+        "SQL": [
+          "Database"
+        ]
+      },
+      "marks": 3
+    },
+    {
+      "id": "aac30c28-6a00-4b14-9a18-9b30707a8adb",
+      "createdAt": "2026-03-24T10:41:39.503Z",
+      "subject": "General",
+      "topic": "General",
+      "difficulty": "Medium",
+      "type": "SINGLE_MCQ",
+      "text": "Which HTML tag is used for the largest heading?",
+      "options": [
+        "<h6>",
+        "<head>",
+        "<h1>",
+        "<header>"
+      ],
+      "correctAnswer": "<h1>",
+      "marks": 1
+    },
+    {
+      "id": "e8b61798-3dc2-4018-9d58-7bd963369c00",
+      "createdAt": "2026-03-24T10:41:39.503Z",
+      "subject": "General",
+      "topic": "General",
+      "difficulty": "Medium",
+      "type": "SINGLE_MCQ",
+      "text": "What does CPU stand for?",
+      "options": [
+        "Central Process Unit",
+        "Central Processing Unit",
+        "Computer Personal Unit",
+        "Core Processing Utility"
+      ],
+      "correctAnswer": "Central Processing Unit",
+      "marks": 1
+    },
+    {
+      "id": "bd223fd6-e5f3-48cb-adaf-8875cd8cc72b",
+      "createdAt": "2026-03-24T10:41:39.503Z",
+      "subject": "General",
+      "topic": "General",
+      "difficulty": "Medium",
+      "type": "SINGLE_MCQ",
+      "text": "Which device forwards data packets between networks?",
+      "options": [
+        "Switch",
+        "Router",
+        "Repeater",
+        "Hub"
+      ],
+      "correctAnswer": "Router",
+      "marks": 1
+    },
+    {
+      "id": "4669166a-f194-4d6d-a267-8b740ce595ef",
+      "createdAt": "2026-03-24T10:41:39.503Z",
+      "subject": "General",
+      "topic": "General",
+      "difficulty": "Medium",
+      "type": "SINGLE_MCQ",
+      "text": "Which layer of the OSI model is responsible for IP addressing and routing?",
+      "options": [
+        "Transport",
+        "Network",
+        "Data Link",
+        "Session"
+      ],
+      "correctAnswer": "Network",
+      "marks": 1
+    },
+    {
+      "id": "ebcf080c-3691-4d02-8c5d-303770ce6f59",
+      "createdAt": "2026-03-24T10:41:39.503Z",
+      "subject": "General",
+      "topic": "General",
+      "difficulty": "Medium",
+      "type": "SINGLE_MCQ",
+      "text": "Which protocol is used to automatically assign IP addresses in a LAN?",
+      "options": [
+        "DNS",
+        "DHCP",
+        "ARP",
+        "ICMP"
+      ],
+      "correctAnswer": "DHCP",
+      "marks": 1
+    },
+    {
+      "id": "20567877-ae92-478e-ae08-49f2c81243c0",
+      "createdAt": "2026-03-24T10:41:39.503Z",
+      "subject": "General",
+      "topic": "General",
+      "difficulty": "Medium",
+      "type": "SINGLE_MCQ",
+      "text": "What is the default port number for HTTPS?",
+      "options": [
+        "21",
+        "25",
+        "443",
+        "110"
+      ],
+      "correctAnswer": "443",
+      "marks": 1
+    },
+    {
+      "id": "bf38ce34-da25-4ab8-b68c-e3d907601256",
+      "createdAt": "2026-03-24T10:41:39.503Z",
+      "subject": "General",
+      "topic": "General",
+      "difficulty": "Medium",
+      "type": "SINGLE_MCQ",
+      "text": "Which memory is volatile and loses data when power is off?",
+      "options": [
+        "ROM",
+        "SSD",
+        "RAM",
+        "HDD"
+      ],
+      "correctAnswer": "RAM",
+      "marks": 1
+    },
+    {
+      "id": "80beecc2-2c36-4673-8417-fa224eaf1395",
+      "createdAt": "2026-03-24T10:41:39.503Z",
+      "subject": "General",
+      "topic": "General",
+      "difficulty": "Medium",
+      "type": "SINGLE_MCQ",
+      "text": "A subnet mask of 255.255.255.0 corresponds to which CIDR notation?",
+      "options": [
+        "/16",
+        "/24",
+        "/28",
+        "/32"
+      ],
+      "correctAnswer": "/24",
+      "marks": 1
+    },
+    {
+      "id": "30cc61f7-8117-4a59-b936-c3f313dfc6e3",
+      "createdAt": "2026-03-24T10:41:39.503Z",
+      "subject": "General",
+      "topic": "General",
+      "difficulty": "Medium",
+      "type": "MSQ",
+      "text": "Which are valid private IPv4 address ranges?",
+      "options": [
+        "10.0.0.0/8",
+        "172.16.0.0/12",
+        "192.168.0.0/16",
+        "8.8.8.0/24"
+      ],
+      "correctAnswer": [
+        "10.0.0.0/8",
+        "172.16.0.0/12",
+        "192.168.0.0/16"
+      ],
+      "marks": 2
+    },
+    {
+      "id": "71f79528-5903-475d-b5d9-3ba1332d8a40",
+      "createdAt": "2026-03-24T10:41:39.503Z",
+      "subject": "General",
+      "topic": "General",
+      "difficulty": "Medium",
+      "type": "MSQ",
+      "text": "Which are core components inside a computer cabinet?",
+      "options": [
+        "Motherboard",
+        "CPU",
+        "RAM",
+        "Projector"
+      ],
+      "correctAnswer": [
+        "Motherboard",
+        "CPU",
+        "RAM"
+      ],
+      "marks": 2
+    },
+    {
+      "id": "3bbf9e94-f3ad-4ab8-bf67-b4b19d9203da",
+      "createdAt": "2026-03-24T10:41:39.503Z",
+      "subject": "General",
+      "topic": "General",
+      "difficulty": "Medium",
+      "type": "DRAG_DROP",
+      "text": "Match network devices with their primary function.",
+      "pairs": [
+        {
+          "left": "Router",
+          "right": "Routes packets between networks"
+        },
+        {
+          "left": "Switch",
+          "right": "Connects devices in a LAN"
+        },
+        {
+          "left": "Firewall",
+          "right": "Filters network traffic by rules"
+        }
+      ],
+      "correctAnswer": {
+        "Router": "Routes packets between networks",
+        "Switch": "Connects devices in a LAN",
+        "Firewall": "Filters network traffic by rules"
+      },
+      "marks": 3
+    },
+    {
+      "id": "e2c3ef76-a7f6-4a5b-af99-dd94b4924723",
+      "createdAt": "2026-03-24T10:41:39.503Z",
+      "subject": "General",
+      "topic": "General",
+      "difficulty": "Medium",
+      "type": "MATRIX",
+      "text": "Map protocols to their common usage areas.",
+      "matrixRows": [
+        "HTTP",
+        "SSH",
+        "SMTP"
+      ],
+      "matrixCols": [
+        "Web Browsing",
+        "Remote Login",
+        "Email Transfer"
+      ],
+      "correctAnswer": {
+        "HTTP": [
+          "Web Browsing"
+        ],
+        "SSH": [
+          "Remote Login"
+        ],
+        "SMTP": [
+          "Email Transfer"
+        ]
+      },
+      "marks": 3
+    },
+    {
+      "id": "4ae035e3-9a93-4996-a247-975d4a7bae16",
+      "createdAt": "2026-03-24T10:41:39.503Z",
+      "subject": "General",
+      "topic": "General",
+      "difficulty": "Medium",
+      "type": "NAT",
+      "text": "If a server sends 1200 packets and 5% are dropped, how many packets are dropped?",
+      "correctAnswer": 60,
+      "marks": 1
+    },
+    {
+      "id": "b7f3cb58-d3a9-43f0-aa64-621d96dacce6",
+      "createdAt": "2026-03-24T10:41:39.503Z",
+      "subject": "General",
+      "topic": "General",
+      "difficulty": "Medium",
+      "type": "INTEGER_RANGE",
+      "text": "Enter any valid host number in a /30 subnet (usable hosts count).",
+      "integerRange": {
+        "min": 1,
+        "max": 2
+      },
+      "correctAnswer": "1-2",
+      "marks": 1
+    },
+    {
+      "id": "fb516855-fe65-4219-b1a4-23b8d41d9f16",
+      "createdAt": "2026-03-24T10:41:39.503Z",
+      "subject": "General",
+      "topic": "General",
+      "difficulty": "Medium",
+      "type": "SINGLE_MCQ",
+      "text": "A number is increased by 20% and becomes 240. What was the original number?",
+      "options": [
+        "180",
+        "190",
+        "200",
+        "220"
+      ],
+      "correctAnswer": "200",
+      "marks": 1
+    },
+    {
+      "id": "cdb3b800-f4fe-4ecc-a2c1-6550a810a6ca",
+      "createdAt": "2026-03-24T10:41:39.503Z",
+      "subject": "General",
+      "topic": "General",
+      "difficulty": "Medium",
+      "type": "NAT",
+      "text": "Find the average of 12, 15, 18, 21, 24.",
+      "correctAnswer": 18,
+      "marks": 1
+    },
+    {
+      "id": "362ed7ad-21ea-4db4-a1ae-58942f49837c",
+      "createdAt": "2026-03-24T10:41:39.503Z",
+      "subject": "General",
+      "topic": "General",
+      "difficulty": "Medium",
+      "type": "SINGLE_MCQ",
+      "text": "If the ratio of boys to girls is 3:2 and total students are 50, how many girls are there?",
+      "options": [
+        "20",
+        "25",
+        "30",
+        "35"
+      ],
+      "correctAnswer": "20",
+      "marks": 1
+    },
+    {
+      "id": "132c72f7-e2d7-4add-ae55-9a3b1b24a401",
+      "createdAt": "2026-03-24T10:41:39.503Z",
+      "subject": "General",
+      "topic": "General",
+      "difficulty": "Medium",
+      "type": "SINGLE_MCQ",
+      "text": "A train travels 180 km in 3 hours. Its speed is:",
+      "options": [
+        "45 km/h",
+        "50 km/h",
+        "60 km/h",
+        "75 km/h"
+      ],
+      "correctAnswer": "60 km/h",
+      "marks": 1
+    },
+    {
+      "id": "af4d8352-23cb-4798-8323-e247ca6889d7",
+      "createdAt": "2026-03-24T10:41:39.503Z",
+      "subject": "General",
+      "topic": "General",
+      "difficulty": "Medium",
+      "type": "SINGLE_MCQ",
+      "text": "Find the next number in the series: 2, 6, 12, 20, 30, ?",
+      "options": [
+        "36",
+        "40",
+        "42",
+        "44"
+      ],
+      "correctAnswer": "42",
+      "marks": 1
+    },
+    {
+      "id": "6a5f4a15-152d-485f-b34c-f3f44049bb20",
+      "createdAt": "2026-03-24T10:41:39.503Z",
+      "subject": "General",
+      "topic": "General",
+      "difficulty": "Medium",
+      "type": "PARAGRAPH_CASE",
+      "text": "Based on the paragraph, choose the best explanation.",
+      "passage": "A web server hosts applications and listens on specific ports. A reverse proxy can forward incoming requests to backend services for load balancing and security.",
+      "options": [
+        "Reverse proxy only stores static files",
+        "Reverse proxy forwards requests to backend services",
+        "Web server cannot listen on ports",
+        "Load balancing is unrelated to servers"
+      ],
+      "correctAnswer": "Reverse proxy forwards requests to backend services",
+      "marks": 2
+    },
+    {
+      "id": "9c4ba5f9-62c6-4ec8-b544-be54b33bbe90",
+      "createdAt": "2026-03-24T10:41:39.503Z",
+      "subject": "General",
+      "topic": "General",
+      "difficulty": "Medium",
+      "type": "SINGLE_MCQ",
+      "text": "Which device separates broadcast domains in a LAN?",
+      "options": [
+        "Hub",
+        "Switch",
+        "Router",
+        "Repeater"
+      ],
+      "correctAnswer": "Router",
+      "marks": 1
+    },
+    {
+      "id": "bca3a8c9-c33a-4c5c-832d-97c1c6ba524a",
+      "createdAt": "2026-03-24T10:41:39.503Z",
+      "subject": "General",
+      "topic": "General",
+      "difficulty": "Medium",
+      "type": "SINGLE_MCQ",
+      "text": "How many usable hosts are available in a /29 subnet?",
+      "options": [
+        "2",
+        "6",
+        "8",
+        "14"
+      ],
+      "correctAnswer": "6",
+      "marks": 1
+    },
+    {
+      "id": "2eefefc8-7525-41c8-b3f6-3b6e3bfdd2c2",
+      "createdAt": "2026-03-24T10:41:39.503Z",
+      "subject": "General",
+      "topic": "General",
+      "difficulty": "Medium",
+      "type": "NAT",
+      "text": "If a network has /28 mask, how many total IP addresses are in that subnet?",
+      "correctAnswer": 16,
+      "marks": 1
+    },
+    {
+      "id": "f8dc1e95-3ca7-40d1-b444-a0196d62dce7",
+      "createdAt": "2026-03-24T10:41:39.503Z",
+      "subject": "General",
+      "topic": "General",
+      "difficulty": "Medium",
+      "type": "MSQ",
+      "text": "Which protocols operate at the Transport layer?",
+      "options": [
+        "TCP",
+        "UDP",
+        "IP",
+        "ICMP"
+      ],
+      "correctAnswer": [
+        "TCP",
+        "UDP"
+      ],
+      "marks": 2
+    },
+    {
+      "id": "bb38f2d8-9bf4-4c18-9031-d504e0dffb43",
+      "createdAt": "2026-03-24T10:41:39.503Z",
+      "subject": "General",
+      "topic": "General",
+      "difficulty": "Medium",
+      "type": "DRAG_DROP",
+      "text": "Match server types with their primary roles.",
+      "pairs": [
+        {
+          "left": "Web Server",
+          "right": "Serves web pages and APIs"
+        },
+        {
+          "left": "Database Server",
+          "right": "Stores and queries data"
+        },
+        {
+          "left": "Mail Server",
+          "right": "Handles email delivery"
+        }
+      ],
+      "correctAnswer": {
+        "Web Server": "Serves web pages and APIs",
+        "Database Server": "Stores and queries data",
+        "Mail Server": "Handles email delivery"
+      },
+      "marks": 3
+    },
+    {
+      "id": "dfbb4001-8663-49bd-863a-68042c8255ec",
+      "createdAt": "2026-03-24T10:41:39.503Z",
+      "subject": "General",
+      "topic": "General",
+      "difficulty": "Medium",
+      "type": "MATRIX",
+      "text": "Match network tools to their common use cases.",
+      "matrixRows": [
+        "Ping",
+        "Traceroute",
+        "NSLookup"
+      ],
+      "matrixCols": [
+        "Connectivity Test",
+        "Path Discovery",
+        "DNS Lookup"
+      ],
+      "correctAnswer": {
+        "Ping": [
+          "Connectivity Test"
+        ],
+        "Traceroute": [
+          "Path Discovery"
+        ],
+        "NSLookup": [
+          "DNS Lookup"
+        ]
+      },
+      "marks": 3
+    },
+    {
+      "id": "914d2aac-c355-4e28-9625-24e269ffea66",
+      "createdAt": "2026-03-24T10:41:39.503Z",
+      "subject": "General",
+      "topic": "General",
+      "difficulty": "Medium",
+      "type": "ASSERTION_REASON",
+      "text": "Select the correct relation for the given assertion and reason.",
+      "assertion": "Subnetting reduces broadcast traffic.",
+      "reason": "Smaller subnets limit broadcast domains.",
+      "options": [
+        "A and R are true, R explains A",
+        "A and R are true, R does not explain A",
+        "A is true, R is false",
+        "A is false, R is true"
+      ],
+      "correctAnswer": "A and R are true, R explains A",
+      "marks": 2
+    },
+    {
+      "id": "499499d6-3d02-4b8f-a670-26f84de8a9fb",
+      "createdAt": "2026-03-24T10:41:39.503Z",
+      "subject": "General",
+      "topic": "General",
+      "difficulty": "Medium",
+      "type": "PARAGRAPH_CASE",
+      "text": "Based on the paragraph, identify the best security control.",
+      "passage": "A company wants to restrict inbound traffic to only specific ports and block all others at the network boundary.",
+      "options": [
+        "VPN",
+        "Firewall",
+        "Load balancer",
+        "Proxy cache"
+      ],
+      "correctAnswer": "Firewall",
+      "marks": 2
+    },
+    {
+      "id": "e041f3d6-05ed-42b0-af56-b32924f7124f",
+      "createdAt": "2026-03-24T10:41:39.503Z",
+      "subject": "General",
+      "topic": "General",
+      "difficulty": "Medium",
+      "type": "SINGLE_MCQ",
+      "text": "If A can complete a task in 12 days and B in 18 days, together they complete it in:",
+      "options": [
+        "6 days",
+        "7.2 days",
+        "8 days",
+        "9 days"
+      ],
+      "correctAnswer": "7.2 days",
+      "marks": 1
+    },
+    {
+      "id": "6d3ab73e-7e0f-4c78-8789-f75293dc4b4c",
+      "createdAt": "2026-03-24T10:41:39.503Z",
+      "subject": "General",
+      "topic": "General",
+      "difficulty": "Medium",
+      "type": "NAT",
+      "text": "A shop gives a 10% discount on 800. What is the discounted price?",
+      "correctAnswer": 720,
+      "marks": 1
+    },
+    {
+      "id": "02f261c2-e26a-4b94-9d41-29fe41ca648e",
+      "type": "MCQ",
+      "text": "Which device is used to input data into a computer?",
+      "options": [
+        "Monitor",
+        "Keyboard",
+        "Printer",
+        "Speaker"
+      ],
+      "correctAnswer": "Keyboard",
+      "passage": "",
+      "pairs": [],
+      "matrixRows": [],
+      "matrixCols": [],
+      "integerRange": null,
+      "assertion": "",
+      "reason": "",
+      "subject": "Hardware",
+      "difficulty": "Easy",
+      "topic": "Input & Output Devices",
+      "marks": 1,
+      "createdAt": "2026-03-25T04:48:55.766Z"
+    },
+    {
+      "id": "e09d095e-5b51-49f9-88c5-e84fa44cd6b8",
+      "type": "MCQ",
+      "text": "Which device converts paper documents to digital form?",
+      "options": [
+        "Printer",
+        "Scanner",
+        "Speaker",
+        "Monitor"
+      ],
+      "correctAnswer": "Scanner",
+      "passage": "",
+      "pairs": [],
+      "matrixRows": [],
+      "matrixCols": [],
+      "integerRange": null,
+      "assertion": "",
+      "reason": "",
+      "subject": "Hardware",
+      "difficulty": "Easy",
+      "topic": "Input & Output Devices",
+      "marks": 1,
+      "createdAt": "2026-03-25T04:51:13.854Z"
+    },
+    {
+      "id": "32ddb52d-690e-4f17-a21a-7e9297d2414e",
+      "type": "MCQ",
+      "text": "Which device reads marked answers on sheets?",
+      "options": [
+        "OCR",
+        "OMR",
+        "MICR",
+        "Scanner"
+      ],
+      "correctAnswer": "OMR",
+      "passage": "",
+      "pairs": [],
+      "matrixRows": [],
+      "matrixCols": [],
+      "integerRange": null,
+      "assertion": "",
+      "reason": "",
+      "subject": "Hardware",
+      "difficulty": "Easy",
+      "topic": "Input & Output Devices",
+      "marks": 1,
+      "createdAt": "2026-03-25T04:52:13.063Z"
+    },
+    {
+      "id": "12afb8d0-4203-4ca7-8641-8f9b199287b3",
+      "type": "MCQ",
+      "text": "Which device reads printed text?",
+      "options": [
+        "OCR",
+        "MICR",
+        "OMR",
+        "Barcode"
+      ],
+      "correctAnswer": "OCR",
+      "passage": "",
+      "pairs": [],
+      "matrixRows": [],
+      "matrixCols": [],
+      "integerRange": null,
+      "assertion": "",
+      "reason": "",
+      "subject": "Hardware",
+      "difficulty": "Easy",
+      "topic": "Input & Output Devices",
+      "marks": 1,
+      "createdAt": "2026-03-25T04:53:06.154Z"
+    },
+    {
+      "id": "5009c9c5-8772-41e6-adf5-7116b2fdcc24",
+      "type": "MCQ",
+      "text": "Which of the following is NOT an input device but is often confused as one?",
+      "options": [
+        "Touchscreen",
+        "Light Pen",
+        "Monitor",
+        "Scanner"
+      ],
+      "correctAnswer": "Monitor",
+      "passage": "",
+      "pairs": [],
+      "matrixRows": [],
+      "matrixCols": [],
+      "integerRange": null,
+      "assertion": "",
+      "reason": "",
+      "subject": "Hardware",
+      "difficulty": "Hard",
+      "topic": "Input & Output Devices",
+      "marks": 1,
+      "createdAt": "2026-03-25T04:55:05.053Z"
+    },
+    {
+      "id": "53333544-0bc6-4a43-976d-7a12ae7360f9",
+      "type": "MCQ",
+      "text": "Which device performs both data entry and command execution indirectly?",
+      "options": [
+        "Mouse",
+        "Keyboard",
+        "Scanner",
+        "Plotter"
+      ],
+      "correctAnswer": "Mouse",
+      "passage": "",
+      "pairs": [],
+      "matrixRows": [],
+      "matrixCols": [],
+      "integerRange": null,
+      "assertion": "",
+      "reason": "",
+      "subject": "Hardware",
+      "difficulty": "Hard",
+      "topic": "Input & Output Devices",
+      "marks": 1,
+      "createdAt": "2026-03-25T04:56:04.845Z"
+    },
+    {
+      "id": "97ea0b54-92f4-440a-b14d-322b9d65fcd9",
+      "type": "MCQ",
+      "text": "Which device uses reflected light foe input?",
+      "options": [
+        "OCR",
+        "OMR",
+        "MICR",
+        "Barcode Reader"
+      ],
+      "correctAnswer": "OMR",
+      "passage": "",
+      "pairs": [],
+      "matrixRows": [],
+      "matrixCols": [],
+      "integerRange": null,
+      "assertion": "",
+      "reason": "",
+      "subject": "Hardware",
+      "difficulty": "Hard",
+      "topic": "Input & Output Devices",
+      "marks": 1,
+      "createdAt": "2026-03-25T04:57:07.732Z"
+    },
+    {
+      "id": "4d9bdbfd-409b-4243-ad61-7a4015d300e1",
+      "type": "MSQ",
+      "text": "Select devices used in automated data capture:",
+      "options": [
+        "OCR",
+        "OMR",
+        "MICR",
+        "Keyboard"
+      ],
+      "correctAnswer": [
+        "OCR",
+        "OMR",
+        "MICR"
+      ],
+      "passage": "",
+      "pairs": [],
+      "matrixRows": [],
+      "matrixCols": [],
+      "integerRange": null,
+      "assertion": "",
+      "reason": "",
+      "subject": "Hardware",
+      "difficulty": "Easy",
+      "topic": "Input & Output Devices",
+      "marks": 1,
+      "createdAt": "2026-03-25T04:58:16.570Z"
+    },
+    {
+      "id": "eff1360e-b9d1-4384-83e8-03b246f2003f",
+      "type": "MATCH",
+      "text": "Match the following",
+      "options": [],
+      "correctAnswer": {
+        "OCR": "Optical text",
+        "OMR": "Mark reading",
+        "MICR": "Magnetic ink",
+        "Barcode": "pattern code"
+      },
+      "passage": "",
+      "pairs": [
+        {
+          "left": "OCR",
+          "right": "Optical text"
+        },
+        {
+          "left": "OMR",
+          "right": "Mark reading"
+        },
+        {
+          "left": "MICR",
+          "right": "Magnetic ink"
+        },
+        {
+          "left": "Barcode",
+          "right": "pattern code"
+        }
+      ],
+      "matrixRows": [],
+      "matrixCols": [],
+      "integerRange": null,
+      "assertion": "",
+      "reason": "",
+      "subject": "Hardware",
+      "difficulty": "Easy",
+      "topic": "Input & Output Devices",
+      "marks": 4,
+      "createdAt": "2026-03-25T05:00:01.717Z",
+      "updatedAt": "2026-03-25T05:00:27.470Z"
+    }
+  ],
+  "exams": [
+    {
+      "id": "d1a2283f-c4cd-4252-9b93-241e51d43fe9",
+      "title": "mock1",
+      "durationMinutes": 30,
+      "questionIds": [
+        "dcf6ef5b-8c17-44b1-84e9-3028733d1815",
+        "23368a78-d1ab-4277-97c3-f36c7674466c",
+        "b936ae2a-f504-4dd9-930a-a0d4bda19b37",
+        "8e04a6ba-a3ca-4b87-a6cf-950651640876",
+        "5571e663-1fde-4335-a060-4c3d990a03be",
+        "e18b241c-b1eb-4da4-9772-33cb49663a5a",
+        "07cf6ccc-9764-4370-81da-f4edd0afe262",
+        "3c66c923-93c3-41bf-a248-57323bd09b83",
+        "c736398e-0baa-4872-a822-df72efcc98df",
+        "9abb1d26-c491-4bf9-9f97-a9a49e88cf7e",
+        "e3b80af3-3e77-4ae9-879b-3f2801591a1a",
+        "4b3dd205-96c4-4934-9a29-9a618e11a886",
+        "f8705ce9-d55b-4447-9614-a10fe6751449",
+        "c4686aa8-6a42-49fb-a76c-085483bf97be",
+        "2c7eda28-6832-4ce8-ac48-36a42131c3fa",
+        "3cb4c860-d359-4851-aafb-d9be940f7bfd",
+        "08251210-8cce-4ea8-932e-9dfd72d7f8a2",
+        "0ca1eec2-1b88-457b-955d-6daafe72933b",
+        "f4a82b31-6098-49f7-a35b-7cdd22ad01f4",
+        "01cf03fa-9dee-4ff5-a790-7393951eb8d0",
+        "bb1936df-3409-4296-be39-3108c126673b",
+        "e7f1a021-5526-4cf1-a13c-87cf48d60e2a",
+        "3d4ea7a3-df43-438b-b491-c59dce4ae25e",
+        "77b5d61d-ac42-4b8d-8071-df6becfcba88",
+        "32678170-b6c3-4f38-bb5c-117f70c34b82",
+        "f55a9ee1-3b0f-4448-a1ad-4c2c068e7f5b",
+        "800f53e2-8731-49c1-a0cd-e9d7590821c2",
+        "83db6bb9-caed-49d4-afaf-b0700932e771",
+        "f7256c73-ce49-49ab-b05e-9d5f0f4f61e2",
+        "ddea13aa-b035-45df-ae98-e15764ed0380",
+        "587b95c7-0e7d-4773-abdc-934fc160b950"
+      ],
+      "published": true,
+      "createdAt": "2026-03-08T14:18:09.060Z"
+    },
+    {
+      "id": "b174c9f6-ab07-404f-b4c1-9c276dbb3935",
+      "title": "Mock2",
+      "durationMinutes": 30,
+      "questionIds": [
+        "dcf6ef5b-8c17-44b1-84e9-3028733d1815",
+        "23368a78-d1ab-4277-97c3-f36c7674466c",
+        "b936ae2a-f504-4dd9-930a-a0d4bda19b37",
+        "8e04a6ba-a3ca-4b87-a6cf-950651640876",
+        "5571e663-1fde-4335-a060-4c3d990a03be",
+        "e18b241c-b1eb-4da4-9772-33cb49663a5a",
+        "07cf6ccc-9764-4370-81da-f4edd0afe262",
+        "3c66c923-93c3-41bf-a248-57323bd09b83",
+        "c736398e-0baa-4872-a822-df72efcc98df"
+      ],
+      "published": true,
+      "createdAt": "2026-03-09T03:54:42.235Z"
+    },
+    {
+      "id": "fe8620bb-c988-467c-ac29-df6f7f6c674a",
+      "title": "mock 3",
+      "examName": "mock 3",
+      "subject": "General",
+      "durationMinutes": 30,
+      "totalMarks": 10,
+      "totalQuestions": 10,
+      "startDate": "2026-03-23T12:39",
+      "endDate": "2026-03-24T12:39",
+      "questionIds": [
+        "b936ae2a-f504-4dd9-930a-a0d4bda19b37",
+        "8e04a6ba-a3ca-4b87-a6cf-950651640876",
+        "5571e663-1fde-4335-a060-4c3d990a03be",
+        "e18b241c-b1eb-4da4-9772-33cb49663a5a",
+        "07cf6ccc-9764-4370-81da-f4edd0afe262",
+        "3c66c923-93c3-41bf-a248-57323bd09b83",
+        "c736398e-0baa-4872-a822-df72efcc98df",
+        "9abb1d26-c491-4bf9-9f97-a9a49e88cf7e",
+        "e3b80af3-3e77-4ae9-879b-3f2801591a1a",
+        "4b3dd205-96c4-4934-9a29-9a618e11a886"
+      ],
+      "published": true,
+      "createdAt": "2026-03-23T07:10:19.238Z"
+    },
+    {
+      "id": "aa5c7a5b-609b-416e-a672-bd2174884c71",
+      "title": "mock",
+      "examName": "mock",
+      "subject": "General",
+      "durationMinutes": 30,
+      "totalMarks": 10,
+      "totalQuestions": 10,
+      "startDate": "2026-03-23T12:42",
+      "endDate": "2026-03-24T12:43",
+      "questionIds": [
+        "dcf6ef5b-8c17-44b1-84e9-3028733d1815",
+        "23368a78-d1ab-4277-97c3-f36c7674466c",
+        "8e04a6ba-a3ca-4b87-a6cf-950651640876",
+        "b936ae2a-f504-4dd9-930a-a0d4bda19b37",
+        "5571e663-1fde-4335-a060-4c3d990a03be",
+        "e18b241c-b1eb-4da4-9772-33cb49663a5a",
+        "3c66c923-93c3-41bf-a248-57323bd09b83",
+        "07cf6ccc-9764-4370-81da-f4edd0afe262",
+        "c736398e-0baa-4872-a822-df72efcc98df",
+        "9abb1d26-c491-4bf9-9f97-a9a49e88cf7e"
+      ],
+      "published": true,
+      "createdAt": "2026-03-23T07:13:24.852Z"
+    },
+    {
+      "id": "e9a17f2e-1597-4ffd-8978-863b248ed16e",
+      "title": "Mock Test",
+      "examName": "Mock Test",
+      "subject": "General",
+      "durationMinutes": 30,
+      "totalMarks": 5,
+      "totalQuestions": 5,
+      "startDate": "2026-03-23T13:41",
+      "endDate": "2026-03-23T13:42",
+      "questionIds": [
+        "be26f91e-ee21-4d6f-90bf-6b9acac1e92d",
+        "e59c8b5d-d854-403f-b74e-079e38294653",
+        "6585b285-33fe-473a-bd16-989ce82e2789",
+        "5571e663-1fde-4335-a060-4c3d990a03be",
+        "0006ebf1-9745-4c5d-b8da-7655a0fe38c0"
+      ],
+      "published": true,
+      "selectionRules": {
+        "counts": {
+          "Easy": 5,
+          "Hard": 0
+        }
+      },
+      "createdAt": "2026-03-23T08:12:02.098Z"
+    },
+    {
+      "id": "6f13bc70-512a-4dd2-9885-81d1ebea0f29",
+      "title": "Practice test",
+      "examName": "Practice test",
+      "subject": "General",
+      "durationMinutes": 30,
+      "totalMarks": 5,
+      "totalQuestions": 5,
+      "startDate": "2026-03-23T13:43",
+      "endDate": "2026-03-23T14:43",
+      "questionIds": [
+        "bd27d311-7e07-46bb-a20e-2fcaf8b3420f",
+        "633be84a-cce9-44cc-a56b-96fe6122183c",
+        "0c02281a-e075-4009-8697-6fbde9aa3c62",
+        "288e0861-a3e0-4290-bf8f-b2ad296a1eff",
+        "0006ebf1-9745-4c5d-b8da-7655a0fe38c0"
+      ],
+      "published": true,
+      "selectionRules": {
+        "counts": {
+          "Easy": 5,
+          "Hard": 0
+        }
+      },
+      "createdAt": "2026-03-23T08:14:17.049Z"
+    },
+    {
+      "id": "66af75c3-ad3a-4dc4-9270-3a5cace2ca83",
+      "title": "Mock 4",
+      "examName": "Mock 4",
+      "subject": "General",
+      "durationMinutes": 30,
+      "totalMarks": 10,
+      "totalQuestions": 10,
+      "startDate": "2026-03-23T16:58",
+      "endDate": "2026-03-23T17:55",
+      "questionIds": [
+        "74cd7d50-0522-4da5-9144-e855131d275c",
+        "2b3e3890-24b3-4d67-8d86-297d62b432d0",
+        "c43f000f-2ff6-4c73-863d-87f0024dfa1b",
+        "8d13da08-554b-4bce-950a-aec06bf78a9b",
+        "ee5ee9fb-0765-405b-a878-74f1351cff73",
+        "c9e7e688-0b82-434e-bf5a-828609875c6d",
+        "d0bb25e7-60b7-4637-87f3-ec330bdde1ba",
+        "4130897a-6e52-45b3-8e64-2a08d1a222ec",
+        "c0f45b13-fd07-414c-848c-8c0d35d2faae",
+        "c86119bc-5cd1-4917-ac79-25c829ec032c",
+        "ccd8230c-ff5f-4571-a716-0988b17fcb22",
+        "59f3023e-94fc-4c77-9471-3a9f5358e1f8",
+        "9bca98a0-1aae-46d5-8585-d93a217b8646"
+      ],
+      "published": true,
+      "createdAt": "2026-03-23T11:26:41.145Z"
+    }
+  ],
+  "attempts": [
+    {
+      "id": "d585c28a-3d93-49b5-862a-105d1c96d0f6",
+      "examId": "d1a2283f-c4cd-4252-9b93-241e51d43fe9",
+      "studentId": "3b979264-0ac8-4fe3-b6b0-32203d9c0af4",
+      "questionIds": [
+        "dcf6ef5b-8c17-44b1-84e9-3028733d1815",
+        "23368a78-d1ab-4277-97c3-f36c7674466c",
+        "b936ae2a-f504-4dd9-930a-a0d4bda19b37",
+        "8e04a6ba-a3ca-4b87-a6cf-950651640876",
+        "5571e663-1fde-4335-a060-4c3d990a03be",
+        "e18b241c-b1eb-4da4-9772-33cb49663a5a",
+        "07cf6ccc-9764-4370-81da-f4edd0afe262",
+        "3c66c923-93c3-41bf-a248-57323bd09b83",
+        "c736398e-0baa-4872-a822-df72efcc98df",
+        "9abb1d26-c491-4bf9-9f97-a9a49e88cf7e",
+        "e3b80af3-3e77-4ae9-879b-3f2801591a1a",
+        "4b3dd205-96c4-4934-9a29-9a618e11a886",
+        "f8705ce9-d55b-4447-9614-a10fe6751449",
+        "c4686aa8-6a42-49fb-a76c-085483bf97be",
+        "2c7eda28-6832-4ce8-ac48-36a42131c3fa",
+        "3cb4c860-d359-4851-aafb-d9be940f7bfd",
+        "08251210-8cce-4ea8-932e-9dfd72d7f8a2",
+        "0ca1eec2-1b88-457b-955d-6daafe72933b",
+        "f4a82b31-6098-49f7-a35b-7cdd22ad01f4",
+        "01cf03fa-9dee-4ff5-a790-7393951eb8d0",
+        "bb1936df-3409-4296-be39-3108c126673b",
+        "e7f1a021-5526-4cf1-a13c-87cf48d60e2a",
+        "3d4ea7a3-df43-438b-b491-c59dce4ae25e",
+        "77b5d61d-ac42-4b8d-8071-df6becfcba88",
+        "32678170-b6c3-4f38-bb5c-117f70c34b82",
+        "f55a9ee1-3b0f-4448-a1ad-4c2c068e7f5b",
+        "800f53e2-8731-49c1-a0cd-e9d7590821c2",
+        "83db6bb9-caed-49d4-afaf-b0700932e771",
+        "f7256c73-ce49-49ab-b05e-9d5f0f4f61e2",
+        "ddea13aa-b035-45df-ae98-e15764ed0380",
+        "587b95c7-0e7d-4773-abdc-934fc160b950"
+      ],
+      "answers": {
+        "3d4ea7a3-df43-438b-b491-c59dce4ae25e": {
+          "India": "New Delhi",
+          "Japan": "Paris",
+          "France": "Tokyo"
+        }
+      },
+      "status": "submitted",
+      "startedAt": "2026-03-08T14:18:54.634Z",
+      "endAt": "2026-03-08T14:48:54.634Z",
+      "score": 0,
+      "details": [
+        {
+          "questionId": "dcf6ef5b-8c17-44b1-84e9-3028733d1815",
+          "type": "MCQ",
+          "correct": false,
+          "received": null,
+          "expected": "O(n²)"
+        },
+        {
+          "questionId": "23368a78-d1ab-4277-97c3-f36c7674466c",
+          "type": "PARAGRAPH_CASE",
+          "correct": false,
+          "received": null,
+          "expected": "Hot Potato Routing"
+        },
+        {
+          "questionId": "b936ae2a-f504-4dd9-930a-a0d4bda19b37",
+          "type": "ASSERTION_REASON",
+          "correct": false,
+          "received": null,
+          "expected": "A and R are true, R explains A"
+        },
+        {
+          "questionId": "8e04a6ba-a3ca-4b87-a6cf-950651640876",
+          "type": "MATRIX",
+          "correct": false,
+          "received": null,
+          "expected": {
+            "Bridge": [
+              "3"
+            ],
+            "Router": [
+              "2"
+            ],
+            "Repeater": [
+              "1"
+            ],
+            "Modem": [
+              "4"
+            ]
+          }
+        },
+        {
+          "questionId": "5571e663-1fde-4335-a060-4c3d990a03be",
+          "type": "INTEGER_RANGE",
+          "correct": false,
+          "received": null,
+          "expected": "12000-12000"
+        },
+        {
+          "questionId": "e18b241c-b1eb-4da4-9772-33cb49663a5a",
+          "type": "NAT",
+          "correct": false,
+          "received": null,
+          "expected": 1
+        },
+        {
+          "questionId": "07cf6ccc-9764-4370-81da-f4edd0afe262",
+          "type": "SINGLE_MCQ",
+          "correct": false,
+          "received": null,
+          "expected": "Queue"
+        },
+        {
+          "questionId": "3c66c923-93c3-41bf-a248-57323bd09b83",
+          "type": "MSQ",
+          "correct": false,
+          "received": null,
+          "expected": [
+            "2",
+            "3",
+            "5"
+          ]
+        },
+        {
+          "questionId": "c736398e-0baa-4872-a822-df72efcc98df",
+          "type": "NAT",
+          "correct": false,
+          "received": null,
+          "expected": 144
+        },
+        {
+          "questionId": "9abb1d26-c491-4bf9-9f97-a9a49e88cf7e",
+          "type": "INTEGER_RANGE",
+          "correct": false,
+          "received": null,
+          "expected": "10-15"
+        },
+        {
+          "questionId": "e3b80af3-3e77-4ae9-879b-3f2801591a1a",
+          "type": "ASSERTION_REASON",
+          "correct": false,
+          "received": null,
+          "expected": "A and R are true, R explains A"
+        },
+        {
+          "questionId": "4b3dd205-96c4-4934-9a29-9a618e11a886",
+          "type": "PARAGRAPH_CASE",
+          "correct": false,
+          "received": null,
+          "expected": "Photosynthesis"
+        },
+        {
+          "questionId": "c4686aa8-6a42-49fb-a76c-085483bf97be",
+          "type": "SINGLE_MCQ",
+          "correct": false,
+          "received": null,
+          "expected": "HTTPS"
+        },
+        {
+          "questionId": "f8705ce9-d55b-4447-9614-a10fe6751449",
+          "type": "SINGLE_MCQ",
+          "correct": false,
+          "received": null,
+          "expected": "Carbon dioxide"
+        },
+        {
+          "questionId": "2c7eda28-6832-4ce8-ac48-36a42131c3fa",
+          "type": "MSQ",
+          "correct": false,
+          "received": null,
+          "expected": [
+            "Encapsulation",
+            "Inheritance",
+            "Polymorphism"
+          ]
+        },
+        {
+          "questionId": "3cb4c860-d359-4851-aafb-d9be940f7bfd",
+          "type": "MSQ",
+          "correct": false,
+          "received": null,
+          "expected": [
+            "React",
+            "Angular",
+            "Vue"
+          ]
+        },
+        {
+          "questionId": "08251210-8cce-4ea8-932e-9dfd72d7f8a2",
+          "type": "NAT",
+          "correct": false,
+          "received": null,
+          "expected": 16
+        },
+        {
+          "questionId": "0ca1eec2-1b88-457b-955d-6daafe72933b",
+          "type": "NAT",
+          "correct": false,
+          "received": null,
+          "expected": 23
+        },
+        {
+          "questionId": "bb1936df-3409-4296-be39-3108c126673b",
+          "type": "INTEGER_RANGE",
+          "correct": false,
+          "received": null,
+          "expected": "1-5"
+        },
+        {
+          "questionId": "01cf03fa-9dee-4ff5-a790-7393951eb8d0",
+          "type": "INTEGER_RANGE",
+          "correct": false,
+          "received": null,
+          "expected": "20-25"
+        },
+        {
+          "questionId": "f4a82b31-6098-49f7-a35b-7cdd22ad01f4",
+          "type": "PARAGRAPH_CASE",
+          "correct": false,
+          "received": null,
+          "expected": "Network"
+        },
+        {
+          "questionId": "e7f1a021-5526-4cf1-a13c-87cf48d60e2a",
+          "type": "ASSERTION_REASON",
+          "correct": false,
+          "received": null,
+          "expected": "A and R are true, R explains A"
+        },
+        {
+          "questionId": "3d4ea7a3-df43-438b-b491-c59dce4ae25e",
+          "type": "DRAG_DROP",
+          "correct": false,
+          "received": {
+            "India": "New Delhi",
+            "Japan": "Paris",
+            "France": "Tokyo"
+          },
+          "expected": {
+            "India": "New Delhi",
+            "Japan": "Tokyo",
+            "France": "Paris"
+          }
+        },
+        {
+          "questionId": "77b5d61d-ac42-4b8d-8071-df6becfcba88",
+          "type": "MATRIX",
+          "correct": false,
+          "received": null,
+          "expected": {
+            "Python": [
+              "Data",
+              "Web"
+            ],
+            "JavaScript": [
+              "Web"
+            ],
+            "SQL": [
+              "Database"
+            ]
+          }
+        },
+        {
+          "questionId": "32678170-b6c3-4f38-bb5c-117f70c34b82",
+          "type": "SINGLE_MCQ",
+          "correct": false,
+          "received": null,
+          "expected": "<h1>"
+        },
+        {
+          "questionId": "f55a9ee1-3b0f-4448-a1ad-4c2c068e7f5b",
+          "type": "SINGLE_MCQ",
+          "correct": false,
+          "received": null,
+          "expected": "Central Processing Unit"
+        },
+        {
+          "questionId": "800f53e2-8731-49c1-a0cd-e9d7590821c2",
+          "type": "SINGLE_MCQ",
+          "correct": false,
+          "received": null,
+          "expected": "Router"
+        },
+        {
+          "questionId": "ddea13aa-b035-45df-ae98-e15764ed0380",
+          "type": "SINGLE_MCQ",
+          "correct": false,
+          "received": null,
+          "expected": "Network"
+        },
+        {
+          "questionId": "f7256c73-ce49-49ab-b05e-9d5f0f4f61e2",
+          "type": "SINGLE_MCQ",
+          "correct": false,
+          "received": null,
+          "expected": "DHCP"
+        },
+        {
+          "questionId": "83db6bb9-caed-49d4-afaf-b0700932e771",
+          "type": "SINGLE_MCQ",
+          "correct": false,
+          "received": null,
+          "expected": "443"
+        },
+        {
+          "questionId": "587b95c7-0e7d-4773-abdc-934fc160b950",
+          "type": "SINGLE_MCQ",
+          "correct": false,
+          "received": null,
+          "expected": "/24"
+        }
+      ],
+      "aiGeneratedCount": 0,
+      "isRetake": false,
+      "submittedAt": "2026-03-08T14:19:51.088Z"
+    },
+    {
+      "id": "2e80579e-fd06-42d6-9b5b-9d7c6b05beb7",
+      "examId": "b174c9f6-ab07-404f-b4c1-9c276dbb3935",
+      "studentId": "3b979264-0ac8-4fe3-b6b0-32203d9c0af4",
+      "questionIds": [
+        "dcf6ef5b-8c17-44b1-84e9-3028733d1815",
+        "23368a78-d1ab-4277-97c3-f36c7674466c",
+        "b936ae2a-f504-4dd9-930a-a0d4bda19b37",
+        "8e04a6ba-a3ca-4b87-a6cf-950651640876",
+        "5571e663-1fde-4335-a060-4c3d990a03be",
+        "e18b241c-b1eb-4da4-9772-33cb49663a5a",
+        "07cf6ccc-9764-4370-81da-f4edd0afe262",
+        "3c66c923-93c3-41bf-a248-57323bd09b83",
+        "c736398e-0baa-4872-a822-df72efcc98df"
+      ],
+      "answers": {
+        "23368a78-d1ab-4277-97c3-f36c7674466c": "Hot Potato Routing",
+        "b936ae2a-f504-4dd9-930a-a0d4bda19b37": "A and R are true, R explains A",
+        "5571e663-1fde-4335-a060-4c3d990a03be": "12000",
+        "e18b241c-b1eb-4da4-9772-33cb49663a5a": "11222",
+        "07cf6ccc-9764-4370-81da-f4edd0afe262": "Queue",
+        "3c66c923-93c3-41bf-a248-57323bd09b83": [
+          "3"
+        ],
+        "c736398e-0baa-4872-a822-df72efcc98df": "144"
+      },
+      "status": "submitted",
+      "startedAt": "2026-03-09T03:54:58.314Z",
+      "endAt": "2026-03-09T04:24:58.314Z",
+      "score": 5,
+      "details": [
+        {
+          "questionId": "dcf6ef5b-8c17-44b1-84e9-3028733d1815",
+          "type": "MCQ",
+          "correct": false,
+          "received": null,
+          "expected": "O(n²)"
+        },
+        {
+          "questionId": "23368a78-d1ab-4277-97c3-f36c7674466c",
+          "type": "PARAGRAPH_CASE",
+          "correct": true,
+          "received": "Hot Potato Routing",
+          "expected": "Hot Potato Routing"
+        },
+        {
+          "questionId": "b936ae2a-f504-4dd9-930a-a0d4bda19b37",
+          "type": "ASSERTION_REASON",
+          "correct": true,
+          "received": "A and R are true, R explains A",
+          "expected": "A and R are true, R explains A"
+        },
+        {
+          "questionId": "8e04a6ba-a3ca-4b87-a6cf-950651640876",
+          "type": "MATRIX",
+          "correct": false,
+          "received": null,
+          "expected": {
+            "Bridge": [
+              "3"
+            ],
+            "Router": [
+              "2"
+            ],
+            "Repeater": [
+              "1"
+            ],
+            "Modem": [
+              "4"
+            ]
+          }
+        },
+        {
+          "questionId": "5571e663-1fde-4335-a060-4c3d990a03be",
+          "type": "INTEGER_RANGE",
+          "correct": true,
+          "received": "12000",
+          "expected": "12000-12000"
+        },
+        {
+          "questionId": "e18b241c-b1eb-4da4-9772-33cb49663a5a",
+          "type": "NAT",
+          "correct": false,
+          "received": "11222",
+          "expected": 1
+        },
+        {
+          "questionId": "07cf6ccc-9764-4370-81da-f4edd0afe262",
+          "type": "SINGLE_MCQ",
+          "correct": true,
+          "received": "Queue",
+          "expected": "Queue"
+        },
+        {
+          "questionId": "3c66c923-93c3-41bf-a248-57323bd09b83",
+          "type": "MSQ",
+          "correct": false,
+          "received": [
+            "3"
+          ],
+          "expected": [
+            "2",
+            "3",
+            "5"
+          ]
+        },
+        {
+          "questionId": "c736398e-0baa-4872-a822-df72efcc98df",
+          "type": "NAT",
+          "correct": true,
+          "received": "144",
+          "expected": 144
+        }
+      ],
+      "aiGeneratedCount": 0,
+      "isRetake": false,
+      "submittedAt": "2026-03-09T03:57:11.940Z"
+    },
+    {
+      "id": "b71a8768-34aa-4f63-975f-2edd88133e8f",
+      "examId": "b174c9f6-ab07-404f-b4c1-9c276dbb3935",
+      "studentId": "3b979264-0ac8-4fe3-b6b0-32203d9c0af4",
+      "questionIds": [
+        "c365939a-9c79-4122-abbd-fd34faeacfcc",
+        "6a852ac9-0947-4033-a09d-1bb6e7b13e0f",
+        "c7f745fe-acd6-47a2-b338-92511445ccb3",
+        "55ef7666-c21b-4e83-abc9-aac52f3004a6",
+        "0a88b3e5-1d85-4e25-8c47-efbb6d50cb0d",
+        "20ed308d-42e3-4371-8830-1f53f84a5875",
+        "64b2152f-b575-4d54-8fec-61ff49897f53",
+        "fe9ff39d-d5a0-4ab9-9bae-3ba1e9f4fa0e",
+        "cb92e32e-e2e6-4c49-a50a-74d4150819c7"
+      ],
+      "answers": {},
+      "status": "submitted",
+      "startedAt": "2026-03-12T08:58:15.248Z",
+      "endAt": "2026-03-12T09:28:15.248Z",
+      "score": 0,
+      "details": [
+        {
+          "questionId": "c365939a-9c79-4122-abbd-fd34faeacfcc",
+          "type": "MCQ",
+          "correct": false,
+          "received": null,
+          "expected": "O(n²)"
+        },
+        {
+          "questionId": "6a852ac9-0947-4033-a09d-1bb6e7b13e0f",
+          "type": "PARAGRAPH_CASE",
+          "correct": false,
+          "received": null,
+          "expected": "Hot Potato Routing"
+        },
+        {
+          "questionId": "c7f745fe-acd6-47a2-b338-92511445ccb3",
+          "type": "ASSERTION_REASON",
+          "correct": false,
+          "received": null,
+          "expected": "A and R are true, R explains A"
+        },
+        {
+          "questionId": "55ef7666-c21b-4e83-abc9-aac52f3004a6",
+          "type": "MATRIX",
+          "correct": false,
+          "received": null,
+          "expected": {
+            "Bridge": [
+              "3"
+            ],
+            "Router": [
+              "2"
+            ],
+            "Repeater": [
+              "1"
+            ],
+            "Modem": [
+              "4"
+            ]
+          }
+        },
+        {
+          "questionId": "0a88b3e5-1d85-4e25-8c47-efbb6d50cb0d",
+          "type": "INTEGER_RANGE",
+          "correct": false,
+          "received": null,
+          "expected": "12000-12000"
+        },
+        {
+          "questionId": "20ed308d-42e3-4371-8830-1f53f84a5875",
+          "type": "NAT",
+          "correct": false,
+          "received": null,
+          "expected": 1
+        },
+        {
+          "questionId": "64b2152f-b575-4d54-8fec-61ff49897f53",
+          "type": "SINGLE_MCQ",
+          "correct": false,
+          "received": null,
+          "expected": "Queue"
+        },
+        {
+          "questionId": "fe9ff39d-d5a0-4ab9-9bae-3ba1e9f4fa0e",
+          "type": "MSQ",
+          "correct": false,
+          "received": null,
+          "expected": [
+            "2",
+            "3",
+            "5"
+          ]
+        },
+        {
+          "questionId": "cb92e32e-e2e6-4c49-a50a-74d4150819c7",
+          "type": "NAT",
+          "correct": false,
+          "received": null,
+          "expected": 144
+        }
+      ],
+      "aiGeneratedCount": 9,
+      "isRetake": true,
+      "submittedAt": "2026-03-12T08:58:28.829Z"
+    },
+    {
+      "id": "32fee014-11a9-4def-b88c-e680d7dae2be",
+      "examId": "b174c9f6-ab07-404f-b4c1-9c276dbb3935",
+      "studentId": "3b979264-0ac8-4fe3-b6b0-32203d9c0af4",
+      "questionIds": [
+        "3623e373-988c-4f2c-96a8-5da952e40ba9",
+        "1512bac1-08b8-43a3-aa04-b89b99c6e883",
+        "be26f91e-ee21-4d6f-90bf-6b9acac1e92d",
+        "633be84a-cce9-44cc-a56b-96fe6122183c",
+        "0c02281a-e075-4009-8697-6fbde9aa3c62",
+        "d6a98f34-7e0f-421c-8d90-3e2a68fed3a4",
+        "d2fadfe7-41ad-46ef-84ca-705280b48a06",
+        "74feb299-016b-494c-959c-05c7a6ee0b40",
+        "48160683-a120-437a-9da8-09f391f03b13"
+      ],
+      "answers": {},
+      "status": "submitted",
+      "startedAt": "2026-03-23T06:56:09.713Z",
+      "endAt": "2026-03-23T07:26:09.713Z",
+      "score": 0,
+      "details": [
+        {
+          "questionId": "3623e373-988c-4f2c-96a8-5da952e40ba9",
+          "type": "MCQ",
+          "correct": false,
+          "received": null,
+          "expected": "O(n²)"
+        },
+        {
+          "questionId": "1512bac1-08b8-43a3-aa04-b89b99c6e883",
+          "type": "PARAGRAPH_CASE",
+          "correct": false,
+          "received": null,
+          "expected": "Hot Potato Routing"
+        },
+        {
+          "questionId": "be26f91e-ee21-4d6f-90bf-6b9acac1e92d",
+          "type": "ASSERTION_REASON",
+          "correct": false,
+          "received": null,
+          "expected": "A and R are true, R explains A"
+        },
+        {
+          "questionId": "633be84a-cce9-44cc-a56b-96fe6122183c",
+          "type": "MATRIX",
+          "correct": false,
+          "received": null,
+          "expected": {
+            "Bridge": [
+              "3"
+            ],
+            "Router": [
+              "2"
+            ],
+            "Repeater": [
+              "1"
+            ],
+            "Modem": [
+              "4"
+            ]
+          }
+        },
+        {
+          "questionId": "0c02281a-e075-4009-8697-6fbde9aa3c62",
+          "type": "INTEGER_RANGE",
+          "correct": false,
+          "received": null,
+          "expected": "12000-12000"
+        },
+        {
+          "questionId": "d6a98f34-7e0f-421c-8d90-3e2a68fed3a4",
+          "type": "NAT",
+          "correct": false,
+          "received": null,
+          "expected": 1
+        },
+        {
+          "questionId": "d2fadfe7-41ad-46ef-84ca-705280b48a06",
+          "type": "SINGLE_MCQ",
+          "correct": false,
+          "received": null,
+          "expected": "Queue"
+        },
+        {
+          "questionId": "74feb299-016b-494c-959c-05c7a6ee0b40",
+          "type": "MSQ",
+          "correct": false,
+          "received": null,
+          "expected": [
+            "2",
+            "3",
+            "5"
+          ]
+        },
+        {
+          "questionId": "48160683-a120-437a-9da8-09f391f03b13",
+          "type": "NAT",
+          "correct": false,
+          "received": null,
+          "expected": 144
+        }
+      ],
+      "aiGeneratedCount": 9,
+      "isRetake": true,
+      "submittedAt": "2026-03-23T06:56:21.712Z"
+    },
+    {
+      "id": "4fdba3ae-5a8e-4aa8-a96b-9fa2a9953873",
+      "examId": "d1a2283f-c4cd-4252-9b93-241e51d43fe9",
+      "studentId": "3b979264-0ac8-4fe3-b6b0-32203d9c0af4",
+      "questionIds": [
+        "d4d307a8-1bd8-4ae7-b93d-37af0e6f0058",
+        "f132fb4b-f169-4871-9e4b-aec4bbe4d131",
+        "bd27d311-7e07-46bb-a20e-2fcaf8b3420f",
+        "0006ebf1-9745-4c5d-b8da-7655a0fe38c0",
+        "288e0861-a3e0-4290-bf8f-b2ad296a1eff",
+        "74cd7d50-0522-4da5-9144-e855131d275c",
+        "2b3e3890-24b3-4d67-8d86-297d62b432d0",
+        "c43f000f-2ff6-4c73-863d-87f0024dfa1b",
+        "8d13da08-554b-4bce-950a-aec06bf78a9b",
+        "ee5ee9fb-0765-405b-a878-74f1351cff73",
+        "c9e7e688-0b82-434e-bf5a-828609875c6d",
+        "9bca98a0-1aae-46d5-8585-d93a217b8646",
+        "a663894a-650e-42b7-9a99-bbe5863c8e09",
+        "0037809a-02ad-429e-aa0e-ee036694ce81",
+        "90e995c8-da18-4d61-8b16-3286a15d5556",
+        "c0cd71a1-9f44-4f2f-98b7-1f17768bc315",
+        "d62cdb12-0399-4d36-bc59-745e32dd2c01",
+        "384829a2-1876-4def-a065-789116747380",
+        "979cae61-f428-4ad4-8347-b2416255a09e",
+        "d0bb25e7-60b7-4637-87f3-ec330bdde1ba",
+        "4130897a-6e52-45b3-8e64-2a08d1a222ec",
+        "c0f45b13-fd07-414c-848c-8c0d35d2faae",
+        "c86119bc-5cd1-4917-ac79-25c829ec032c",
+        "ccd8230c-ff5f-4571-a716-0988b17fcb22",
+        "59f3023e-94fc-4c77-9471-3a9f5358e1f8",
+        "d6067475-dd80-4e5b-8ca5-99b7b8387c1f",
+        "0b4631d1-c3ae-4f84-8860-1e041c0bb109",
+        "437424ba-ec10-4f78-88e9-91fff25196f1",
+        "046ed490-ca88-468d-b267-020edb82b25c",
+        "f39fc568-c25c-42a8-a291-1929339b6638",
+        "8808ea7c-3c13-4cc8-86a9-a60cfd7a1fe8"
+      ],
+      "answers": {
+        "d4d307a8-1bd8-4ae7-b93d-37af0e6f0058": "O(n²)",
+        "0006ebf1-9745-4c5d-b8da-7655a0fe38c0": {
+          "Bridge": [
+            "Regenerates signals"
+          ],
+          "Router": [
+            "Connects different networks"
+          ],
+          "Repeater": [
+            "Connects LAN segments"
+          ],
+          "Modem": [
+            "Converts digital signal to analog"
+          ]
+        },
+        "288e0861-a3e0-4290-bf8f-b2ad296a1eff": "12000",
+        "74cd7d50-0522-4da5-9144-e855131d275c": "700",
+        "2b3e3890-24b3-4d67-8d86-297d62b432d0": "Queue",
+        "d6067475-dd80-4e5b-8ca5-99b7b8387c1f": "Central Processing Unit",
+        "c86119bc-5cd1-4917-ac79-25c829ec032c": {
+          "Japan": "New Delhi",
+          "India": "Paris",
+          "France": "Tokyo"
+        }
+      },
+      "status": "submitted",
+      "startedAt": "2026-03-23T06:58:08.177Z",
+      "endAt": "2026-03-23T07:28:08.177Z",
+      "score": 4,
+      "details": [
+        {
+          "questionId": "d4d307a8-1bd8-4ae7-b93d-37af0e6f0058",
+          "type": "MCQ",
+          "correct": true,
+          "received": "O(n²)",
+          "expected": "O(n²)"
+        },
+        {
+          "questionId": "f132fb4b-f169-4871-9e4b-aec4bbe4d131",
+          "type": "PARAGRAPH_CASE",
+          "correct": false,
+          "received": null,
+          "expected": "Hot Potato Routing"
+        },
+        {
+          "questionId": "bd27d311-7e07-46bb-a20e-2fcaf8b3420f",
+          "type": "ASSERTION_REASON",
+          "correct": false,
+          "received": null,
+          "expected": "A and R are true, R explains A"
+        },
+        {
+          "questionId": "0006ebf1-9745-4c5d-b8da-7655a0fe38c0",
+          "type": "MATRIX",
+          "correct": false,
+          "received": {
+            "Bridge": [
+              "Regenerates signals"
+            ],
+            "Router": [
+              "Connects different networks"
+            ],
+            "Repeater": [
+              "Connects LAN segments"
+            ],
+            "Modem": [
+              "Converts digital signal to analog"
+            ]
+          },
+          "expected": {
+            "Bridge": [
+              "3"
+            ],
+            "Router": [
+              "2"
+            ],
+            "Repeater": [
+              "1"
+            ],
+            "Modem": [
+              "4"
+            ]
+          }
+        },
+        {
+          "questionId": "288e0861-a3e0-4290-bf8f-b2ad296a1eff",
+          "type": "INTEGER_RANGE",
+          "correct": true,
+          "received": "12000",
+          "expected": "12000-12000"
+        },
+        {
+          "questionId": "74cd7d50-0522-4da5-9144-e855131d275c",
+          "type": "NAT",
+          "correct": false,
+          "received": "700",
+          "expected": 1
+        },
+        {
+          "questionId": "2b3e3890-24b3-4d67-8d86-297d62b432d0",
+          "type": "SINGLE_MCQ",
+          "correct": true,
+          "received": "Queue",
+          "expected": "Queue"
+        },
+        {
+          "questionId": "c43f000f-2ff6-4c73-863d-87f0024dfa1b",
+          "type": "MSQ",
+          "correct": false,
+          "received": null,
+          "expected": [
+            "2",
+            "3",
+            "5"
+          ]
+        },
+        {
+          "questionId": "8d13da08-554b-4bce-950a-aec06bf78a9b",
+          "type": "NAT",
+          "correct": false,
+          "received": null,
+          "expected": 144
+        },
+        {
+          "questionId": "ee5ee9fb-0765-405b-a878-74f1351cff73",
+          "type": "INTEGER_RANGE",
+          "correct": false,
+          "received": null,
+          "expected": "10-15"
+        },
+        {
+          "questionId": "c9e7e688-0b82-434e-bf5a-828609875c6d",
+          "type": "ASSERTION_REASON",
+          "correct": false,
+          "received": null,
+          "expected": "A and R are true, R explains A"
+        },
+        {
+          "questionId": "9bca98a0-1aae-46d5-8585-d93a217b8646",
+          "type": "PARAGRAPH_CASE",
+          "correct": false,
+          "received": null,
+          "expected": "Photosynthesis"
+        },
+        {
+          "questionId": "a663894a-650e-42b7-9a99-bbe5863c8e09",
+          "type": "SINGLE_MCQ",
+          "correct": false,
+          "received": null,
+          "expected": "HTTPS"
+        },
+        {
+          "questionId": "0037809a-02ad-429e-aa0e-ee036694ce81",
+          "type": "SINGLE_MCQ",
+          "correct": false,
+          "received": null,
+          "expected": "Carbon dioxide"
+        },
+        {
+          "questionId": "90e995c8-da18-4d61-8b16-3286a15d5556",
+          "type": "MSQ",
+          "correct": false,
+          "received": null,
+          "expected": [
+            "Encapsulation",
+            "Inheritance",
+            "Polymorphism"
+          ]
+        },
+        {
+          "questionId": "c0cd71a1-9f44-4f2f-98b7-1f17768bc315",
+          "type": "MSQ",
+          "correct": false,
+          "received": null,
+          "expected": [
+            "React",
+            "Angular",
+            "Vue"
+          ]
+        },
+        {
+          "questionId": "d62cdb12-0399-4d36-bc59-745e32dd2c01",
+          "type": "NAT",
+          "correct": false,
+          "received": null,
+          "expected": 16
+        },
+        {
+          "questionId": "384829a2-1876-4def-a065-789116747380",
+          "type": "NAT",
+          "correct": false,
+          "received": null,
+          "expected": 23
+        },
+        {
+          "questionId": "979cae61-f428-4ad4-8347-b2416255a09e",
+          "type": "INTEGER_RANGE",
+          "correct": false,
+          "received": null,
+          "expected": "1-5"
+        },
+        {
+          "questionId": "d0bb25e7-60b7-4637-87f3-ec330bdde1ba",
+          "type": "INTEGER_RANGE",
+          "correct": false,
+          "received": null,
+          "expected": "20-25"
+        },
+        {
+          "questionId": "4130897a-6e52-45b3-8e64-2a08d1a222ec",
+          "type": "PARAGRAPH_CASE",
+          "correct": false,
+          "received": null,
+          "expected": "Network"
+        },
+        {
+          "questionId": "c0f45b13-fd07-414c-848c-8c0d35d2faae",
+          "type": "ASSERTION_REASON",
+          "correct": false,
+          "received": null,
+          "expected": "A and R are true, R explains A"
+        },
+        {
+          "questionId": "c86119bc-5cd1-4917-ac79-25c829ec032c",
+          "type": "DRAG_DROP",
+          "correct": false,
+          "received": {
+            "Japan": "New Delhi",
+            "India": "Paris",
+            "France": "Tokyo"
+          },
+          "expected": {
+            "India": "New Delhi",
+            "Japan": "Tokyo",
+            "France": "Paris"
+          }
+        },
+        {
+          "questionId": "ccd8230c-ff5f-4571-a716-0988b17fcb22",
+          "type": "MATRIX",
+          "correct": false,
+          "received": null,
+          "expected": {
+            "Python": [
+              "Data",
+              "Web"
+            ],
+            "JavaScript": [
+              "Web"
+            ],
+            "SQL": [
+              "Database"
+            ]
+          }
+        },
+        {
+          "questionId": "59f3023e-94fc-4c77-9471-3a9f5358e1f8",
+          "type": "SINGLE_MCQ",
+          "correct": false,
+          "received": null,
+          "expected": "<h1>"
+        },
+        {
+          "questionId": "d6067475-dd80-4e5b-8ca5-99b7b8387c1f",
+          "type": "SINGLE_MCQ",
+          "correct": true,
+          "received": "Central Processing Unit",
+          "expected": "Central Processing Unit"
+        },
+        {
+          "questionId": "0b4631d1-c3ae-4f84-8860-1e041c0bb109",
+          "type": "SINGLE_MCQ",
+          "correct": false,
+          "received": null,
+          "expected": "Router"
+        },
+        {
+          "questionId": "437424ba-ec10-4f78-88e9-91fff25196f1",
+          "type": "SINGLE_MCQ",
+          "correct": false,
+          "received": null,
+          "expected": "Network"
+        },
+        {
+          "questionId": "046ed490-ca88-468d-b267-020edb82b25c",
+          "type": "SINGLE_MCQ",
+          "correct": false,
+          "received": null,
+          "expected": "DHCP"
+        },
+        {
+          "questionId": "f39fc568-c25c-42a8-a291-1929339b6638",
+          "type": "SINGLE_MCQ",
+          "correct": false,
+          "received": null,
+          "expected": "443"
+        },
+        {
+          "questionId": "8808ea7c-3c13-4cc8-86a9-a60cfd7a1fe8",
+          "type": "SINGLE_MCQ",
+          "correct": false,
+          "received": null,
+          "expected": "/24"
+        }
+      ],
+      "aiGeneratedCount": 31,
+      "isRetake": true,
+      "submittedAt": "2026-03-23T07:02:27.423Z"
+    },
+    {
+      "id": "1062a084-0c7a-4fab-9f4c-6b2aa1e68a5e",
+      "examId": "d1a2283f-c4cd-4252-9b93-241e51d43fe9",
+      "studentId": "3b979264-0ac8-4fe3-b6b0-32203d9c0af4",
+      "questionIds": [
+        "ef8fb2c9-aa13-4fad-ab76-f1ba6d5e0427",
+        "44263898-b7cb-4093-811e-6e5a74207120",
+        "65ca0fb4-5cc2-4e52-a586-312c992a6927",
+        "e7b30e28-d015-4eb6-814d-a8833a5ccc70",
+        "6585b285-33fe-473a-bd16-989ce82e2789",
+        "9486e08d-492c-4772-acbe-257c2e18c91e",
+        "325d2d9a-2ebc-4c72-a716-27bc8dfdd3bc",
+        "7f5f7e95-e434-469e-b9ac-8e81e28e3fec",
+        "981cb1f7-14fd-4dff-9c9d-1b8e061d80fa",
+        "9efee069-b770-4478-9297-6672b91fb62a",
+        "500f7e06-76eb-4f44-8f0f-d8f75342964a",
+        "0c7aa5b6-8f1c-45d2-9ab1-9691a9db8e5a",
+        "f02c2da8-f180-4e11-94dc-1587f6f460af",
+        "96ac2357-6a3e-4203-92c9-3246b54bf632",
+        "4f3c6aa0-c619-41df-b7a1-31a049d1e656",
+        "9d8f5915-4e94-49ec-817a-6b462c343184",
+        "e3170aad-6035-491a-b824-574f7508712c",
+        "10c4dee7-66e1-4e9e-a601-9baea2f2f181",
+        "a9fe752a-1636-4f78-865e-0132e75faaa2",
+        "6e2e0113-7baa-4211-b5ac-bfc3b2b2d5df",
+        "b4dc0702-7959-4c25-aa05-c8f16a781ad7",
+        "2546306f-e424-47f9-a705-2452734cbdbf",
+        "7efb3be5-8c57-43fa-8c5b-524e45a77d67",
+        "3dc6735f-be99-4658-a817-00401f080e4d",
+        "347dcf5a-f097-4e8c-ba8b-c52b2da3abad",
+        "cb1dc74d-445e-4193-a22b-ab8f99756a36",
+        "8d118326-5624-4c91-afd1-24564fe53a49",
+        "d1dbb3e3-de18-4f2b-b5dc-ea43c63608bc",
+        "9a5a43c2-b284-4731-9865-16bdf3438cb6",
+        "d81518f1-ce18-45db-a837-6adca8cd8709",
+        "a010e532-62fe-48da-9879-b490f1a8f780"
+      ],
+      "answers": {
+        "ef8fb2c9-aa13-4fad-ab76-f1ba6d5e0427": "O(n²)",
+        "44263898-b7cb-4093-811e-6e5a74207120": "Flooding",
+        "65ca0fb4-5cc2-4e52-a586-312c992a6927": "A and R are true, R does not explain A"
+      },
+      "status": "submitted",
+      "startedAt": "2026-03-23T07:17:59.573Z",
+      "endAt": "2026-03-23T07:47:59.573Z",
+      "score": 1,
+      "details": [
+        {
+          "questionId": "ef8fb2c9-aa13-4fad-ab76-f1ba6d5e0427",
+          "type": "MCQ",
+          "correct": true,
+          "received": "O(n²)",
+          "expected": "O(n²)"
+        },
+        {
+          "questionId": "44263898-b7cb-4093-811e-6e5a74207120",
+          "type": "PARAGRAPH_CASE",
+          "correct": false,
+          "received": "Flooding",
+          "expected": "Hot Potato Routing"
+        },
+        {
+          "questionId": "65ca0fb4-5cc2-4e52-a586-312c992a6927",
+          "type": "ASSERTION_REASON",
+          "correct": false,
+          "received": "A and R are true, R does not explain A",
+          "expected": "A and R are true, R explains A"
+        },
+        {
+          "questionId": "e7b30e28-d015-4eb6-814d-a8833a5ccc70",
+          "type": "MATRIX",
+          "correct": false,
+          "received": null,
+          "expected": {
+            "Bridge": [
+              "3"
+            ],
+            "Router": [
+              "2"
+            ],
+            "Repeater": [
+              "1"
+            ],
+            "Modem": [
+              "4"
+            ]
+          }
+        },
+        {
+          "questionId": "6585b285-33fe-473a-bd16-989ce82e2789",
+          "type": "INTEGER_RANGE",
+          "correct": false,
+          "received": null,
+          "expected": "12000-12000"
+        },
+        {
+          "questionId": "9486e08d-492c-4772-acbe-257c2e18c91e",
+          "type": "NAT",
+          "correct": false,
+          "received": null,
+          "expected": 1
+        },
+        {
+          "questionId": "325d2d9a-2ebc-4c72-a716-27bc8dfdd3bc",
+          "type": "SINGLE_MCQ",
+          "correct": false,
+          "received": null,
+          "expected": "Queue"
+        },
+        {
+          "questionId": "7f5f7e95-e434-469e-b9ac-8e81e28e3fec",
+          "type": "MSQ",
+          "correct": false,
+          "received": null,
+          "expected": [
+            "2",
+            "3",
+            "5"
+          ]
+        },
+        {
+          "questionId": "981cb1f7-14fd-4dff-9c9d-1b8e061d80fa",
+          "type": "NAT",
+          "correct": false,
+          "received": null,
+          "expected": 144
+        },
+        {
+          "questionId": "9efee069-b770-4478-9297-6672b91fb62a",
+          "type": "INTEGER_RANGE",
+          "correct": false,
+          "received": null,
+          "expected": "10-15"
+        },
+        {
+          "questionId": "500f7e06-76eb-4f44-8f0f-d8f75342964a",
+          "type": "ASSERTION_REASON",
+          "correct": false,
+          "received": null,
+          "expected": "A and R are true, R explains A"
+        },
+        {
+          "questionId": "0c7aa5b6-8f1c-45d2-9ab1-9691a9db8e5a",
+          "type": "PARAGRAPH_CASE",
+          "correct": false,
+          "received": null,
+          "expected": "Photosynthesis"
+        },
+        {
+          "questionId": "f02c2da8-f180-4e11-94dc-1587f6f460af",
+          "type": "SINGLE_MCQ",
+          "correct": false,
+          "received": null,
+          "expected": "HTTPS"
+        },
+        {
+          "questionId": "96ac2357-6a3e-4203-92c9-3246b54bf632",
+          "type": "SINGLE_MCQ",
+          "correct": false,
+          "received": null,
+          "expected": "Carbon dioxide"
+        },
+        {
+          "questionId": "4f3c6aa0-c619-41df-b7a1-31a049d1e656",
+          "type": "MSQ",
+          "correct": false,
+          "received": null,
+          "expected": [
+            "Encapsulation",
+            "Inheritance",
+            "Polymorphism"
+          ]
+        },
+        {
+          "questionId": "9d8f5915-4e94-49ec-817a-6b462c343184",
+          "type": "MSQ",
+          "correct": false,
+          "received": null,
+          "expected": [
+            "React",
+            "Angular",
+            "Vue"
+          ]
+        },
+        {
+          "questionId": "e3170aad-6035-491a-b824-574f7508712c",
+          "type": "NAT",
+          "correct": false,
+          "received": null,
+          "expected": 16
+        },
+        {
+          "questionId": "10c4dee7-66e1-4e9e-a601-9baea2f2f181",
+          "type": "NAT",
+          "correct": false,
+          "received": null,
+          "expected": 23
+        },
+        {
+          "questionId": "a9fe752a-1636-4f78-865e-0132e75faaa2",
+          "type": "INTEGER_RANGE",
+          "correct": false,
+          "received": null,
+          "expected": "1-5"
+        },
+        {
+          "questionId": "6e2e0113-7baa-4211-b5ac-bfc3b2b2d5df",
+          "type": "INTEGER_RANGE",
+          "correct": false,
+          "received": null,
+          "expected": "20-25"
+        },
+        {
+          "questionId": "b4dc0702-7959-4c25-aa05-c8f16a781ad7",
+          "type": "PARAGRAPH_CASE",
+          "correct": false,
+          "received": null,
+          "expected": "Network"
+        },
+        {
+          "questionId": "2546306f-e424-47f9-a705-2452734cbdbf",
+          "type": "ASSERTION_REASON",
+          "correct": false,
+          "received": null,
+          "expected": "A and R are true, R explains A"
+        },
+        {
+          "questionId": "7efb3be5-8c57-43fa-8c5b-524e45a77d67",
+          "type": "DRAG_DROP",
+          "correct": false,
+          "received": null,
+          "expected": {
+            "India": "New Delhi",
+            "Japan": "Tokyo",
+            "France": "Paris"
+          }
+        },
+        {
+          "questionId": "3dc6735f-be99-4658-a817-00401f080e4d",
+          "type": "MATRIX",
+          "correct": false,
+          "received": null,
+          "expected": {
+            "Python": [
+              "Data",
+              "Web"
+            ],
+            "JavaScript": [
+              "Web"
+            ],
+            "SQL": [
+              "Database"
+            ]
+          }
+        },
+        {
+          "questionId": "347dcf5a-f097-4e8c-ba8b-c52b2da3abad",
+          "type": "SINGLE_MCQ",
+          "correct": false,
+          "received": null,
+          "expected": "<h1>"
+        },
+        {
+          "questionId": "cb1dc74d-445e-4193-a22b-ab8f99756a36",
+          "type": "SINGLE_MCQ",
+          "correct": false,
+          "received": null,
+          "expected": "Central Processing Unit"
+        },
+        {
+          "questionId": "8d118326-5624-4c91-afd1-24564fe53a49",
+          "type": "SINGLE_MCQ",
+          "correct": false,
+          "received": null,
+          "expected": "Router"
+        },
+        {
+          "questionId": "d1dbb3e3-de18-4f2b-b5dc-ea43c63608bc",
+          "type": "SINGLE_MCQ",
+          "correct": false,
+          "received": null,
+          "expected": "Network"
+        },
+        {
+          "questionId": "9a5a43c2-b284-4731-9865-16bdf3438cb6",
+          "type": "SINGLE_MCQ",
+          "correct": false,
+          "received": null,
+          "expected": "DHCP"
+        },
+        {
+          "questionId": "d81518f1-ce18-45db-a837-6adca8cd8709",
+          "type": "SINGLE_MCQ",
+          "correct": false,
+          "received": null,
+          "expected": "443"
+        },
+        {
+          "questionId": "a010e532-62fe-48da-9879-b490f1a8f780",
+          "type": "SINGLE_MCQ",
+          "correct": false,
+          "received": null,
+          "expected": "/24"
+        }
+      ],
+      "aiGeneratedCount": 31,
+      "isRetake": true,
+      "submittedAt": "2026-03-23T07:18:28.927Z"
+    },
+    {
+      "id": "c30ddf7c-9fe2-4071-b2f9-d2f25174f8de",
+      "examId": "6f13bc70-512a-4dd2-9885-81d1ebea0f29",
+      "studentId": "3b979264-0ac8-4fe3-b6b0-32203d9c0af4",
+      "questionIds": [
+        "bd27d311-7e07-46bb-a20e-2fcaf8b3420f",
+        "633be84a-cce9-44cc-a56b-96fe6122183c",
+        "0c02281a-e075-4009-8697-6fbde9aa3c62",
+        "288e0861-a3e0-4290-bf8f-b2ad296a1eff",
+        "0006ebf1-9745-4c5d-b8da-7655a0fe38c0"
+      ],
+      "answers": {
+        "bd27d311-7e07-46bb-a20e-2fcaf8b3420f": "A and R are true, R explains A",
+        "633be84a-cce9-44cc-a56b-96fe6122183c": {
+          "Bridge": [
+            "Connects different networks"
+          ],
+          "Router": [
+            "Connects LAN segments",
+            "Connects different networks"
+          ],
+          "Repeater": [
+            "Regenerates signals",
+            "Converts digital signal to analog"
+          ],
+          "Modem": [
+            "Connects LAN segments"
+          ]
+        },
+        "0c02281a-e075-4009-8697-6fbde9aa3c62": "1500"
+      },
+      "status": "submitted",
+      "startedAt": "2026-03-23T08:14:46.589Z",
+      "endAt": "2026-03-23T08:44:46.589Z",
+      "score": 1,
+      "details": [
+        {
+          "questionId": "633be84a-cce9-44cc-a56b-96fe6122183c",
+          "type": "MATRIX",
+          "correct": false,
+          "received": {
+            "Bridge": [
+              "Connects different networks"
+            ],
+            "Router": [
+              "Connects LAN segments",
+              "Connects different networks"
+            ],
+            "Repeater": [
+              "Regenerates signals",
+              "Converts digital signal to analog"
+            ],
+            "Modem": [
+              "Connects LAN segments"
+            ]
+          },
+          "expected": {
+            "Bridge": [
+              "3"
+            ],
+            "Router": [
+              "2"
+            ],
+            "Repeater": [
+              "1"
+            ],
+            "Modem": [
+              "4"
+            ]
+          }
+        },
+        {
+          "questionId": "0c02281a-e075-4009-8697-6fbde9aa3c62",
+          "type": "INTEGER_RANGE",
+          "correct": false,
+          "received": "1500",
+          "expected": "12000-12000"
+        },
+        {
+          "questionId": "bd27d311-7e07-46bb-a20e-2fcaf8b3420f",
+          "type": "ASSERTION_REASON",
+          "correct": true,
+          "received": "A and R are true, R explains A",
+          "expected": "A and R are true, R explains A"
+        },
+        {
+          "questionId": "0006ebf1-9745-4c5d-b8da-7655a0fe38c0",
+          "type": "MATRIX",
+          "correct": false,
+          "received": null,
+          "expected": {
+            "Bridge": [
+              "3"
+            ],
+            "Router": [
+              "2"
+            ],
+            "Repeater": [
+              "1"
+            ],
+            "Modem": [
+              "4"
+            ]
+          }
+        },
+        {
+          "questionId": "288e0861-a3e0-4290-bf8f-b2ad296a1eff",
+          "type": "INTEGER_RANGE",
+          "correct": false,
+          "received": null,
+          "expected": "12000-12000"
+        }
+      ],
+      "aiGeneratedCount": 0,
+      "isRetake": false,
+      "submittedAt": "2026-03-23T08:15:46.966Z"
+    },
+    {
+      "id": "5fa4c8f1-b2cf-44c0-b516-3dd921875300",
+      "examId": "d1a2283f-c4cd-4252-9b93-241e51d43fe9",
+      "studentId": "3b979264-0ac8-4fe3-b6b0-32203d9c0af4",
+      "questionIds": [
+        "751d0629-ad84-41ad-9062-60c1fd171eed",
+        "5a6d4b7f-0fec-4eb0-89d5-5fc79ef392fc",
+        "5605272d-a6ea-4b58-ad20-7af09e080a05",
+        "1c3a1fdd-6cac-4684-a69f-0ad676e22a31",
+        "0137d53e-912a-4c64-a51e-aa1d83d2639d",
+        "75cd68a1-eb36-4fb0-b410-77c3ca968921",
+        "7756ed1b-c86e-44c4-8849-f05fc97639e2",
+        "203da041-242c-400b-be68-5ed9fc48ff47",
+        "14b6eaca-a2c0-4ef0-b32e-fdf4c6fb81fb",
+        "e4a903f1-c602-4b8a-ad48-e79ab0c7b6ec",
+        "a5217594-ace2-410b-b14e-f92ec925b23e",
+        "4535f482-4afc-4780-bf14-39803164cbe9",
+        "b77f97be-f567-4127-8b72-894eb4b45293",
+        "946cb284-2768-4220-adf0-66dbf04511d8",
+        "77da7de9-0858-4f50-bce6-a0c6bd421b72",
+        "3121c3cb-cc0c-40d0-9423-31aaf9ef469d",
+        "cf5b1ec5-9ee8-44a8-9f9c-6fd35c9eeb49",
+        "392ee6af-8314-4aba-a61e-77e3dfa1ca88",
+        "0def47f4-4abb-4963-ad7c-83682e91a2e5",
+        "ba5737a0-7699-48d4-a1e4-f41c96f0698c",
+        "4df91b52-4ea3-4186-95e7-7764e6032d52",
+        "76ce05cb-8965-43b2-976c-0917eda4c848",
+        "4501bb8f-c87f-4c85-b009-4c37b6cfc908",
+        "91eb999c-d358-4feb-afaa-002a29c8a062",
+        "110318d6-2966-4227-a4d7-4afc6a22875f",
+        "46c2748a-47b9-4ead-a193-cbc4e5d58f19",
+        "fb580b7c-671c-4a1d-ac95-402eba03c274",
+        "2323484b-0b25-4c0a-b65f-bf6c55692f17",
+        "2a7905d8-8353-4afc-bafc-c3e46f58595a",
+        "2fe4a797-af5c-419c-ac4f-22c9898acee9",
+        "b7ba5dc2-b2d0-42b2-82f8-e1462c609173"
+      ],
+      "answers": {
+        "751d0629-ad84-41ad-9062-60c1fd171eed": "O(n²)",
+        "5a6d4b7f-0fec-4eb0-89d5-5fc79ef392fc": "Static Routing",
+        "4501bb8f-c87f-4c85-b009-4c37b6cfc908": {
+          "Japan": "New Delhi",
+          "India": "Paris",
+          "France": "Tokyo"
+        },
+        "b7ba5dc2-b2d0-42b2-82f8-e1462c609173": "/24",
+        "5605272d-a6ea-4b58-ad20-7af09e080a05": "A and R are true, R does not explain A",
+        "392ee6af-8314-4aba-a61e-77e3dfa1ca88": "5"
+      },
+      "status": "submitted",
+      "startedAt": "2026-03-23T11:23:00.298Z",
+      "endAt": "2026-03-23T11:53:00.298Z",
+      "score": 2,
+      "details": [
+        {
+          "questionId": "751d0629-ad84-41ad-9062-60c1fd171eed",
+          "type": "MCQ",
+          "correct": true,
+          "received": "O(n²)",
+          "expected": "O(n²)"
+        },
+        {
+          "questionId": "5a6d4b7f-0fec-4eb0-89d5-5fc79ef392fc",
+          "type": "PARAGRAPH_CASE",
+          "correct": false,
+          "received": "Static Routing",
+          "expected": "Hot Potato Routing"
+        },
+        {
+          "questionId": "5605272d-a6ea-4b58-ad20-7af09e080a05",
+          "type": "ASSERTION_REASON",
+          "correct": false,
+          "received": "A and R are true, R does not explain A",
+          "expected": "A and R are true, R explains A"
+        },
+        {
+          "questionId": "1c3a1fdd-6cac-4684-a69f-0ad676e22a31",
+          "type": "MATRIX",
+          "correct": false,
+          "received": null,
+          "expected": {
+            "Bridge": [
+              "3"
+            ],
+            "Router": [
+              "2"
+            ],
+            "Repeater": [
+              "1"
+            ],
+            "Modem": [
+              "4"
+            ]
+          }
+        },
+        {
+          "questionId": "0137d53e-912a-4c64-a51e-aa1d83d2639d",
+          "type": "INTEGER_RANGE",
+          "correct": false,
+          "received": null,
+          "expected": "12000-12000"
+        },
+        {
+          "questionId": "75cd68a1-eb36-4fb0-b410-77c3ca968921",
+          "type": "NAT",
+          "correct": false,
+          "received": null,
+          "expected": 1
+        },
+        {
+          "questionId": "7756ed1b-c86e-44c4-8849-f05fc97639e2",
+          "type": "SINGLE_MCQ",
+          "correct": false,
+          "received": null,
+          "expected": "Queue"
+        },
+        {
+          "questionId": "203da041-242c-400b-be68-5ed9fc48ff47",
+          "type": "MSQ",
+          "correct": false,
+          "received": null,
+          "expected": [
+            "2",
+            "3",
+            "5"
+          ]
+        },
+        {
+          "questionId": "14b6eaca-a2c0-4ef0-b32e-fdf4c6fb81fb",
+          "type": "NAT",
+          "correct": false,
+          "received": null,
+          "expected": 144
+        },
+        {
+          "questionId": "e4a903f1-c602-4b8a-ad48-e79ab0c7b6ec",
+          "type": "INTEGER_RANGE",
+          "correct": false,
+          "received": null,
+          "expected": "10-15"
+        },
+        {
+          "questionId": "a5217594-ace2-410b-b14e-f92ec925b23e",
+          "type": "ASSERTION_REASON",
+          "correct": false,
+          "received": null,
+          "expected": "A and R are true, R explains A"
+        },
+        {
+          "questionId": "4535f482-4afc-4780-bf14-39803164cbe9",
+          "type": "PARAGRAPH_CASE",
+          "correct": false,
+          "received": null,
+          "expected": "Photosynthesis"
+        },
+        {
+          "questionId": "b77f97be-f567-4127-8b72-894eb4b45293",
+          "type": "SINGLE_MCQ",
+          "correct": false,
+          "received": null,
+          "expected": "HTTPS"
+        },
+        {
+          "questionId": "946cb284-2768-4220-adf0-66dbf04511d8",
+          "type": "SINGLE_MCQ",
+          "correct": false,
+          "received": null,
+          "expected": "Carbon dioxide"
+        },
+        {
+          "questionId": "77da7de9-0858-4f50-bce6-a0c6bd421b72",
+          "type": "MSQ",
+          "correct": false,
+          "received": null,
+          "expected": [
+            "Encapsulation",
+            "Inheritance",
+            "Polymorphism"
+          ]
+        },
+        {
+          "questionId": "3121c3cb-cc0c-40d0-9423-31aaf9ef469d",
+          "type": "MSQ",
+          "correct": false,
+          "received": null,
+          "expected": [
+            "React",
+            "Angular",
+            "Vue"
+          ]
+        },
+        {
+          "questionId": "cf5b1ec5-9ee8-44a8-9f9c-6fd35c9eeb49",
+          "type": "NAT",
+          "correct": false,
+          "received": null,
+          "expected": 16
+        },
+        {
+          "questionId": "392ee6af-8314-4aba-a61e-77e3dfa1ca88",
+          "type": "NAT",
+          "correct": false,
+          "received": "5",
+          "expected": 23
+        },
+        {
+          "questionId": "0def47f4-4abb-4963-ad7c-83682e91a2e5",
+          "type": "INTEGER_RANGE",
+          "correct": false,
+          "received": null,
+          "expected": "1-5"
+        },
+        {
+          "questionId": "ba5737a0-7699-48d4-a1e4-f41c96f0698c",
+          "type": "INTEGER_RANGE",
+          "correct": false,
+          "received": null,
+          "expected": "20-25"
+        },
+        {
+          "questionId": "4df91b52-4ea3-4186-95e7-7764e6032d52",
+          "type": "PARAGRAPH_CASE",
+          "correct": false,
+          "received": null,
+          "expected": "Network"
+        },
+        {
+          "questionId": "76ce05cb-8965-43b2-976c-0917eda4c848",
+          "type": "ASSERTION_REASON",
+          "correct": false,
+          "received": null,
+          "expected": "A and R are true, R explains A"
+        },
+        {
+          "questionId": "4501bb8f-c87f-4c85-b009-4c37b6cfc908",
+          "type": "DRAG_DROP",
+          "correct": false,
+          "received": {
+            "Japan": "New Delhi",
+            "India": "Paris",
+            "France": "Tokyo"
+          },
+          "expected": {
+            "India": "New Delhi",
+            "Japan": "Tokyo",
+            "France": "Paris"
+          }
+        },
+        {
+          "questionId": "91eb999c-d358-4feb-afaa-002a29c8a062",
+          "type": "MATRIX",
+          "correct": false,
+          "received": null,
+          "expected": {
+            "Python": [
+              "Data",
+              "Web"
+            ],
+            "JavaScript": [
+              "Web"
+            ],
+            "SQL": [
+              "Database"
+            ]
+          }
+        },
+        {
+          "questionId": "110318d6-2966-4227-a4d7-4afc6a22875f",
+          "type": "SINGLE_MCQ",
+          "correct": false,
+          "received": null,
+          "expected": "<h1>"
+        },
+        {
+          "questionId": "46c2748a-47b9-4ead-a193-cbc4e5d58f19",
+          "type": "SINGLE_MCQ",
+          "correct": false,
+          "received": null,
+          "expected": "Central Processing Unit"
+        },
+        {
+          "questionId": "fb580b7c-671c-4a1d-ac95-402eba03c274",
+          "type": "SINGLE_MCQ",
+          "correct": false,
+          "received": null,
+          "expected": "Router"
+        },
+        {
+          "questionId": "2323484b-0b25-4c0a-b65f-bf6c55692f17",
+          "type": "SINGLE_MCQ",
+          "correct": false,
+          "received": null,
+          "expected": "Network"
+        },
+        {
+          "questionId": "2a7905d8-8353-4afc-bafc-c3e46f58595a",
+          "type": "SINGLE_MCQ",
+          "correct": false,
+          "received": null,
+          "expected": "DHCP"
+        },
+        {
+          "questionId": "2fe4a797-af5c-419c-ac4f-22c9898acee9",
+          "type": "SINGLE_MCQ",
+          "correct": false,
+          "received": null,
+          "expected": "443"
+        },
+        {
+          "questionId": "b7ba5dc2-b2d0-42b2-82f8-e1462c609173",
+          "type": "SINGLE_MCQ",
+          "correct": true,
+          "received": "/24",
+          "expected": "/24"
+        }
+      ],
+      "aiGeneratedCount": 31,
+      "isRetake": true,
+      "submittedAt": "2026-03-23T11:24:10.990Z"
+    },
+    {
+      "id": "5fe584b0-b5db-4c8d-9778-c55453e39715",
+      "examId": "d1a2283f-c4cd-4252-9b93-241e51d43fe9",
+      "studentId": "3b979264-0ac8-4fe3-b6b0-32203d9c0af4",
+      "questionIds": [
+        "03f0cb85-41ee-42aa-b677-f551cb5915fb",
+        "bd952b70-8757-4b53-aad9-c47466f6c14e",
+        "549bfcc5-423a-4dae-9cb4-75be3c1b31dc",
+        "00ec10f7-0a3f-4bde-9099-dd071a99cfad",
+        "0f13f743-6fca-42cb-b6e5-8aca2f0b0a4d",
+        "5b2f6909-55dc-4b0e-a82a-1ae7e95a4bf0",
+        "ce0d51d6-2b4c-43c6-b3a0-7c4873fad8f4",
+        "69392f92-770e-487c-a5a6-6cdc80e8b945",
+        "1ac5d69f-2bb2-403e-a47c-64a678f413f7",
+        "d559cf54-b167-43aa-b2dc-bdf410bfe612",
+        "36fed1fa-a01f-4b22-a562-c92e65c1d8cc",
+        "52221c48-57f2-442e-b47c-77abc58c623b",
+        "65e9c0d0-e128-406c-8cb9-d96718d43aa1",
+        "1ec8c58c-b20f-4902-96e7-d27cc4783fa4",
+        "ec67b8fc-fefd-4eb4-94cb-a1fed133df08",
+        "8a6fe4e9-1028-4779-be7f-5f32d7e44963",
+        "0fcc55f4-85f2-46cf-90ba-0d19bece268c",
+        "a526cba9-dfac-4299-9d6b-356f9ff9935c",
+        "5effac4b-72ec-40e3-8473-42b5547ce198",
+        "77792724-83a0-48c7-917b-423a4384b0a0",
+        "e8b2b545-1706-4c73-abb7-3af8fb15943c",
+        "991a35f2-8ad9-45f0-b369-f6b3fc6479dd",
+        "1389e475-540b-4ec4-89b0-d6c1ea4ae4ed",
+        "13591312-3da2-435b-adad-e25cf2476095",
+        "1b3cb727-b442-4d71-91c3-6c5955c316f2",
+        "21af9e17-c112-45d7-8bca-4b5675f2926f",
+        "d1d79063-4254-4ff2-8e29-04394b3320ef",
+        "b4a81b5e-4c1a-4f4f-a357-ee8eb0a36612",
+        "b5e8b27c-5b0a-4c2d-a86e-d21ed342412b",
+        "65473c48-2f2a-4b0f-a82f-f1596047c9d0",
+        "c037e0e2-6da3-4fd9-80e6-ad7c8b67e124"
+      ],
+      "answers": {
+        "03f0cb85-41ee-42aa-b677-f551cb5915fb": "O(n²)",
+        "69392f92-770e-487c-a5a6-6cdc80e8b945": [
+          "5"
+        ],
+        "d559cf54-b167-43aa-b2dc-bdf410bfe612": "50"
+      },
+      "status": "submitted",
+      "startedAt": "2026-03-23T11:36:39.262Z",
+      "endAt": "2026-03-23T12:06:39.262Z",
+      "score": 0,
+      "details": [
+        {
+          "questionId": "dcf6ef5b-8c17-44b1-84e9-3028733d1815",
+          "type": "MCQ",
+          "correct": false,
+          "received": null,
+          "expected": "O(n²)"
+        },
+        {
+          "questionId": "23368a78-d1ab-4277-97c3-f36c7674466c",
+          "type": "PARAGRAPH_CASE",
+          "correct": false,
+          "received": null,
+          "expected": "Hot Potato Routing"
+        },
+        {
+          "questionId": "b936ae2a-f504-4dd9-930a-a0d4bda19b37",
+          "type": "ASSERTION_REASON",
+          "correct": false,
+          "received": null,
+          "expected": "A and R are true, R explains A"
+        },
+        {
+          "questionId": "8e04a6ba-a3ca-4b87-a6cf-950651640876",
+          "type": "MATRIX",
+          "correct": false,
+          "received": null,
+          "expected": {
+            "Bridge": [
+              "3"
+            ],
+            "Router": [
+              "2"
+            ],
+            "Repeater": [
+              "1"
+            ],
+            "Modem": [
+              "4"
+            ]
+          }
+        },
+        {
+          "questionId": "5571e663-1fde-4335-a060-4c3d990a03be",
+          "type": "INTEGER_RANGE",
+          "correct": false,
+          "received": null,
+          "expected": "12000-12000"
+        },
+        {
+          "questionId": "e18b241c-b1eb-4da4-9772-33cb49663a5a",
+          "type": "NAT",
+          "correct": false,
+          "received": null,
+          "expected": 1
+        },
+        {
+          "questionId": "07cf6ccc-9764-4370-81da-f4edd0afe262",
+          "type": "SINGLE_MCQ",
+          "correct": false,
+          "received": null,
+          "expected": "Queue"
+        },
+        {
+          "questionId": "3c66c923-93c3-41bf-a248-57323bd09b83",
+          "type": "MSQ",
+          "correct": false,
+          "received": null,
+          "expected": [
+            "2",
+            "3",
+            "5"
+          ]
+        },
+        {
+          "questionId": "c736398e-0baa-4872-a822-df72efcc98df",
+          "type": "NAT",
+          "correct": false,
+          "received": null,
+          "expected": 144
+        },
+        {
+          "questionId": "9abb1d26-c491-4bf9-9f97-a9a49e88cf7e",
+          "type": "INTEGER_RANGE",
+          "correct": false,
+          "received": null,
+          "expected": "10-15"
+        },
+        {
+          "questionId": "e3b80af3-3e77-4ae9-879b-3f2801591a1a",
+          "type": "ASSERTION_REASON",
+          "correct": false,
+          "received": null,
+          "expected": "A and R are true, R explains A"
+        },
+        {
+          "questionId": "4b3dd205-96c4-4934-9a29-9a618e11a886",
+          "type": "PARAGRAPH_CASE",
+          "correct": false,
+          "received": null,
+          "expected": "Photosynthesis"
+        },
+        {
+          "questionId": "c4686aa8-6a42-49fb-a76c-085483bf97be",
+          "type": "SINGLE_MCQ",
+          "correct": false,
+          "received": null,
+          "expected": "HTTPS"
+        },
+        {
+          "questionId": "f8705ce9-d55b-4447-9614-a10fe6751449",
+          "type": "SINGLE_MCQ",
+          "correct": false,
+          "received": null,
+          "expected": "Carbon dioxide"
+        },
+        {
+          "questionId": "2c7eda28-6832-4ce8-ac48-36a42131c3fa",
+          "type": "MSQ",
+          "correct": false,
+          "received": null,
+          "expected": [
+            "Encapsulation",
+            "Inheritance",
+            "Polymorphism"
+          ]
+        },
+        {
+          "questionId": "3cb4c860-d359-4851-aafb-d9be940f7bfd",
+          "type": "MSQ",
+          "correct": false,
+          "received": null,
+          "expected": [
+            "React",
+            "Angular",
+            "Vue"
+          ]
+        },
+        {
+          "questionId": "08251210-8cce-4ea8-932e-9dfd72d7f8a2",
+          "type": "NAT",
+          "correct": false,
+          "received": null,
+          "expected": 16
+        },
+        {
+          "questionId": "0ca1eec2-1b88-457b-955d-6daafe72933b",
+          "type": "NAT",
+          "correct": false,
+          "received": null,
+          "expected": 23
+        },
+        {
+          "questionId": "bb1936df-3409-4296-be39-3108c126673b",
+          "type": "INTEGER_RANGE",
+          "correct": false,
+          "received": null,
+          "expected": "1-5"
+        },
+        {
+          "questionId": "01cf03fa-9dee-4ff5-a790-7393951eb8d0",
+          "type": "INTEGER_RANGE",
+          "correct": false,
+          "received": null,
+          "expected": "20-25"
+        },
+        {
+          "questionId": "f4a82b31-6098-49f7-a35b-7cdd22ad01f4",
+          "type": "PARAGRAPH_CASE",
+          "correct": false,
+          "received": null,
+          "expected": "Network"
+        },
+        {
+          "questionId": "e7f1a021-5526-4cf1-a13c-87cf48d60e2a",
+          "type": "ASSERTION_REASON",
+          "correct": false,
+          "received": null,
+          "expected": "A and R are true, R explains A"
+        },
+        {
+          "questionId": "3d4ea7a3-df43-438b-b491-c59dce4ae25e",
+          "type": "DRAG_DROP",
+          "correct": false,
+          "received": null,
+          "expected": {
+            "India": "New Delhi",
+            "Japan": "Tokyo",
+            "France": "Paris"
+          }
+        },
+        {
+          "questionId": "77b5d61d-ac42-4b8d-8071-df6becfcba88",
+          "type": "MATRIX",
+          "correct": false,
+          "received": null,
+          "expected": {
+            "Python": [
+              "Data",
+              "Web"
+            ],
+            "JavaScript": [
+              "Web"
+            ],
+            "SQL": [
+              "Database"
+            ]
+          }
+        },
+        {
+          "questionId": "32678170-b6c3-4f38-bb5c-117f70c34b82",
+          "type": "SINGLE_MCQ",
+          "correct": false,
+          "received": null,
+          "expected": "<h1>"
+        },
+        {
+          "questionId": "f55a9ee1-3b0f-4448-a1ad-4c2c068e7f5b",
+          "type": "SINGLE_MCQ",
+          "correct": false,
+          "received": null,
+          "expected": "Central Processing Unit"
+        },
+        {
+          "questionId": "800f53e2-8731-49c1-a0cd-e9d7590821c2",
+          "type": "SINGLE_MCQ",
+          "correct": false,
+          "received": null,
+          "expected": "Router"
+        },
+        {
+          "questionId": "ddea13aa-b035-45df-ae98-e15764ed0380",
+          "type": "SINGLE_MCQ",
+          "correct": false,
+          "received": null,
+          "expected": "Network"
+        },
+        {
+          "questionId": "f7256c73-ce49-49ab-b05e-9d5f0f4f61e2",
+          "type": "SINGLE_MCQ",
+          "correct": false,
+          "received": null,
+          "expected": "DHCP"
+        },
+        {
+          "questionId": "83db6bb9-caed-49d4-afaf-b0700932e771",
+          "type": "SINGLE_MCQ",
+          "correct": false,
+          "received": null,
+          "expected": "443"
+        },
+        {
+          "questionId": "587b95c7-0e7d-4773-abdc-934fc160b950",
+          "type": "SINGLE_MCQ",
+          "correct": false,
+          "received": null,
+          "expected": "/24"
+        }
+      ],
+      "aiGeneratedCount": 31,
+      "isRetake": true,
+      "submittedAt": "2026-03-24T04:31:45.485Z"
+    },
+    {
+      "id": "edd90234-bb0a-4895-a9ca-91f495c223b2",
+      "examId": "d1a2283f-c4cd-4252-9b93-241e51d43fe9",
+      "studentId": "3b979264-0ac8-4fe3-b6b0-32203d9c0af4",
+      "questionIds": [],
+      "answers": {},
+      "status": "submitted",
+      "startedAt": "2026-03-30T09:49:20.772Z",
+      "endAt": "2026-03-30T10:19:20.772Z",
+      "score": 0,
+      "details": [],
+      "aiGeneratedCount": 0,
+      "isRetake": true,
+      "submittedAt": "2026-03-30T10:19:24.278Z"
+    },
+    {
+      "id": "a0f24f21-e165-4f65-84c9-04d06af9a5cf",
+      "examId": "b174c9f6-ab07-404f-b4c1-9c276dbb3935",
+      "studentId": "3b979264-0ac8-4fe3-b6b0-32203d9c0af4",
+      "questionIds": [],
+      "answers": {},
+      "status": "submitted",
+      "startedAt": "2026-03-30T09:49:36.428Z",
+      "endAt": "2026-03-30T10:19:36.428Z",
+      "score": 0,
+      "details": [],
+      "aiGeneratedCount": 0,
+      "isRetake": true,
+      "submittedAt": "2026-03-30T10:19:39.276Z"
+    },
+    {
+      "id": "54bbfb19-126b-465c-aa92-5fc37a4c929a",
+      "examId": "b174c9f6-ab07-404f-b4c1-9c276dbb3935",
+      "studentId": "3b979264-0ac8-4fe3-b6b0-32203d9c0af4",
+      "questionIds": [],
+      "answers": {},
+      "status": "submitted",
+      "startedAt": "2026-03-30T09:49:56.462Z",
+      "endAt": "2026-03-30T10:19:56.462Z",
+      "score": 0,
+      "details": [],
+      "aiGeneratedCount": 0,
+      "isRetake": true,
+      "submittedAt": "2026-03-30T10:19:59.305Z"
+    },
+    {
+      "id": "57af8aae-02f2-4c18-8245-3d7388bcf20f",
+      "examId": "d1a2283f-c4cd-4252-9b93-241e51d43fe9",
+      "studentId": "3b979264-0ac8-4fe3-b6b0-32203d9c0af4",
+      "questionIds": [],
+      "answers": {},
+      "status": "submitted",
+      "startedAt": "2026-03-30T11:15:27.333Z",
+      "endAt": "2026-03-30T11:45:27.333Z",
+      "score": 0,
+      "details": [],
+      "aiGeneratedCount": 0,
+      "isRetake": true,
+      "submittedAt": "2026-03-30T11:45:28.558Z"
+    }
+  ],
+  "students": [],
+  "results": []
+}
