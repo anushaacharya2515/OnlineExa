@@ -54,6 +54,8 @@ export default function AdminCreateExam() {
     endDate: "",
     marksPerQuestion: 1,
     randomizeQuestions: true,
+    negativeMarking: false,
+    negativeMarkValue: 0.25,
     selectionRules: { counts: { Easy: 5, Medium: 3, Hard: 2 } }
   });
 
@@ -219,6 +221,8 @@ export default function AdminCreateExam() {
         endDate: "",
         marksPerQuestion: 1,
         randomizeQuestions: true,
+        negativeMarking: false,
+        negativeMarkValue: 0.25,
         selectionRules: { counts: { Easy: 5, Medium: 3, Hard: 2 } }
       });
       setStep(1);
@@ -267,6 +271,8 @@ export default function AdminCreateExam() {
         endDate: "",
         marksPerQuestion: 1,
         randomizeQuestions: true,
+        negativeMarking: false,
+        negativeMarkValue: 0.25,
         selectionRules: { counts: { Easy: 5, Medium: 3, Hard: 2 } }
       });
       setPreviewQuestions([]);

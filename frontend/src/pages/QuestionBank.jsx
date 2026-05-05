@@ -424,21 +424,29 @@ export default function QuestionBank() {
       {error && <div className="error">{error}</div>}
 
       <div className="qb-controls card">
-        <div className="qb-top-row">
-          <div className="search-row">
-            <input
-              placeholder="Search questions..."
-              value={search}
-              onChange={(e) => setSearch(e.target.value)}
-            />
-            <button className="ghost" onClick={handleSearch}>Search</button>
-          </div>
-          <div className="row-actions">
-            <button onClick={openAddModal}>Add Question</button>
-          </div>
+        {/* Compact single-line filter bar */}
+        <div className="ar-toolbar">
+          <input
+            className="ar-search"
+            placeholder="🔍 Search questions…"
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+          />
+          <select className="ar-select" value={filters.difficulty} onChange={(e) => setFilters({ ...filters, difficulty: e.target.value })}>
+            <option value="">All Difficulty</option>
+            {DIFFICULTY_OPTIONS.map(d => <option key={d} value={d}>{d}</option>)}
+          </select>
+          <select className="ar-select" value={filters.type} onChange={(e) => setFilters({ ...filters, type: e.target.value })}>
+            <option value="">All Types</option>
+            {TYPE_OPTIONS.map(t => <option key={t.value} value={t.value}>{t.label}</option>)}
+          </select>
+          <span className="ar-count">{filteredQuestions.length} questions</span>
+          <button className="ar-btn-ghost" onClick={resetFilters}>Reset</button>
+          <button className="ar-btn-ghost" style={{ background: "linear-gradient(135deg,#6f4cff,#9b6bff)", color: "#fff", border: "none" }} onClick={openAddModal}>+ Add Question</button>
         </div>
 
-        <div className="module-card-row">
+        {/* Module navigation cards */}
+        <div className="module-card-row" style={{ marginTop: "10px" }}>
           {modules.map((m) => (
             <Link
               key={m._id}
@@ -448,88 +456,6 @@ export default function QuestionBank() {
               <span>{m.name}</span>
             </Link>
           ))}
-        </div>
-        <p className="muted">Manage and organize questions by modules and topics. Selecting multiple modules allows you to build more comprehensive exams.</p>
-
-        <div className="filter-controls">
-          <div className="question-bank-filter-block">
-            <div className="selection-toolbar">
-              <button
-                type="button"
-                className="ghost"
-                onClick={() => setFilters((prev) => ({
-                  ...prev,
-                  moduleIds: prev.moduleIds.length === modules.length ? [] : modules.map((item) => item._id),
-                  topicIds: []
-                }))}
-              >
-                {filters.moduleIds.length === modules.length ? "Clear Modules" : "Select All Modules"}
-              </button>
-              {!!filters.moduleIds.length && (
-                <div className="selection-chips">
-                  {modules
-                    .filter((item) => filters.moduleIds.includes(item._id))
-                    .map((item) => (
-                      <button
-                        key={item._id}
-                        type="button"
-                        className="selection-chip"
-                        onClick={() => setFilters((prev) => ({
-                          ...prev,
-                          moduleIds: prev.moduleIds.filter((id) => id !== item._id),
-                          topicIds: []
-                        }))}
-                      >
-                        {item.name} ×
-                      </button>
-                    ))}
-                </div>
-              )}
-            </div>
-            <div className="row-actions">
-              <div>
-                <label>Modules</label>
-                <select
-                  className="multi-select"
-                  multiple
-                  size={Math.min(Math.max(modules.length, 3), 6)}
-                  value={filters.moduleIds}
-                  onChange={(e) => setFilters((prev) => ({
-                    ...prev,
-                    moduleIds: collectValues(e),
-                    topicIds: []
-                  }))}
-                >
-                  {modules.map((m) => <option key={m._id} value={m._id}>{m.name}</option>)}
-                </select>
-              </div>
-              <div>
-                <label>Topics</label>
-                <select
-                  className="multi-select"
-                  multiple
-                  size={Math.min(Math.max(filterTopics.length, 3), 6)}
-                  value={filters.topicIds}
-                  onChange={(e) => setFilters((prev) => ({ ...prev, topicIds: collectValues(e) }))}
-                >
-                  {filterTopics.map((t) => <option key={t._id} value={t._id}>{t.name}</option>)}
-                </select>
-              </div>
-            </div>
-          </div>
-          <select value={filters.difficulty} onChange={(e) => setFilters({ ...filters, difficulty: e.target.value })}>
-            <option value="">All Difficulty</option>
-            {DIFFICULTY_OPTIONS.map((d) => (
-              <option key={d} value={d}>{d}</option>
-            ))}
-          </select>
-          <select value={filters.type} onChange={(e) => setFilters({ ...filters, type: e.target.value })}>
-            <option value="">All Types</option>
-            {TYPE_OPTIONS.map((t) => <option key={t.value} value={t.value}>{t.label}</option>)}
-          </select>
-          <button className="ghost" onClick={applyFilters}>Apply Filters</button>
-          <button className="ghost" onClick={resetFilters}>Reset</button>
-          <span className="pill-count">{filteredQuestions.length} questions</span>
         </div>
       </div>
 

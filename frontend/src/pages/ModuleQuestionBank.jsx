@@ -28,7 +28,7 @@ export default function ModuleQuestionBank() {
   const [modalMode, setModalMode] = useState(null);
   const [activeQuestion, setActiveQuestion] = useState(null);
   const activeModule = useMemo(
-    () => modules.find((m) => m.name === decodedModule),
+    () => modules.find((m) => m.name.toLowerCase().trim() === decodedModule.toLowerCase().trim()),
     [modules, decodedModule]
   );
   const [form, setForm] = useState({
@@ -130,7 +130,7 @@ export default function ModuleQuestionBank() {
 
   function openAddModal() {
     setActiveQuestion(null);
-    const selectedTopic = topics.find((t) => t._id === filters.topicId) || topics[0];
+    const selectedTopic = topics.find((t) => t._id === filters.topicId) || topics[0] || null;
     setForm({
       text: "",
       moduleId: activeModule?._id || "",
@@ -224,7 +224,7 @@ export default function ModuleQuestionBank() {
 
   function validate() {
     if (!form.text.trim()) return "Question text is required";
-    if (!form.topicId || !form.topic) return "Topic is required";
+    if (topics.length > 0 && (!form.topicId || !form.topic)) return "Topic is required";
     if (!form.marks || Number.isNaN(Number(form.marks))) return "Marks must be numeric";
 
     if (form.type === "MCQ") {
@@ -364,10 +364,10 @@ export default function ModuleQuestionBank() {
     }
   }
 
-  if (modules.length && !activeModule) {
+  if (modules.length > 0 && !activeModule && questions.length === 0) {
     return (
       <AdminShell title="Question Bank">
-        <div className="error">Module not found.</div>
+        <div className="error">Module "{decodedModule}" not found. It may still be loading.</div>
         <Link to="/admin/question-bank" className="ghost button-link">Back to Question Bank</Link>
       </AdminShell>
     );
@@ -393,6 +393,29 @@ export default function ModuleQuestionBank() {
         </div>
       </div>
 
+      {/* Filter bar — right below header */}
+      <div className="module-filters-card">
+        <div className="ar-toolbar">
+          <input
+            className="ar-search"
+            placeholder="🔍 Search questions…"
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+          />
+          <select className="ar-select" value={filters.difficulty} onChange={(e) => setFilters({ ...filters, difficulty: e.target.value })}>
+            <option value="">All Difficulty</option>
+            {DIFFICULTY_OPTIONS.map((d) => <option key={d} value={d}>{d}</option>)}
+          </select>
+          <select className="ar-select" value={filters.type} onChange={(e) => setFilters({ ...filters, type: e.target.value })}>
+            <option value="">All Types</option>
+            {TYPE_OPTIONS.map((t) => <option key={t.value} value={t.value}>{t.label}</option>)}
+          </select>
+          <span className="ar-count">{filteredQuestions.length} questions</span>
+          <button className="ar-btn-ghost" onClick={() => setFilters({ topicId: "", difficulty: "", type: "" })}>Reset</button>
+        </div>
+      </div>
+
+      {/* Topic chips — below filter bar */}
       <div className="module-topics">
         {topics.map((t) => (
           <button
@@ -407,31 +430,6 @@ export default function ModuleQuestionBank() {
             {t.name}
           </button>
         ))}
-      </div>
-
-      <div className="module-filters-card">
-        <div className="search-row">
-          <input
-            placeholder="Search questions..."
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-          />
-          <button className="ghost" onClick={handleSearch}>Search</button>
-        </div>
-        <div className="filter-controls">
-          <select value={filters.difficulty} onChange={(e) => setFilters({ ...filters, difficulty: e.target.value })}>
-            <option value="">All Difficulty</option>
-            {DIFFICULTY_OPTIONS.map((d) => (
-              <option key={d} value={d}>{d}</option>
-            ))}
-          </select>
-          <select value={filters.type} onChange={(e) => setFilters({ ...filters, type: e.target.value })}>
-            <option value="">All Types</option>
-            {TYPE_OPTIONS.map((t) => <option key={t.value} value={t.value}>{t.label}</option>)}
-          </select>
-          <button className="ghost" onClick={() => setFilters({ topicId: "", difficulty: "", type: "" })}>Reset</button>
-          <span className="pill-count">{filteredQuestions.length} questions</span>
-        </div>
       </div>
 
       <QuestionTable

@@ -12,6 +12,7 @@ import studentRouter from "./routes/student.js";
 import moduleRoutes from "./routes/modules.js";
 import topicRoutes from "./routes/topics.js";
 import subTopicRoutes from "./routes/subtopics.js";
+import aiRoutes from "./routes/ai.js";
 import { ensureAdmin, ensureReferenceQuestionBank } from "./seed.js";
 import { gradeAttempt } from "./services/grading.js";
 import { Attempt } from "./models/Attempt.js";
@@ -35,6 +36,7 @@ app.get("/api/health", (req, res) => {
 
 app.use("/api/auth", authRoutes);
 app.use("/api/admin", adminRoutes);
+app.use("/api/ai", aiRoutes);
 app.use("/api/questions", questionRoutes);
 app.use("/api/exams", examRoutes);
 app.use("/api/student", studentRouter(io));

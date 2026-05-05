@@ -13,6 +13,8 @@ const ExamSchema = new mongoose.Schema(
     endDate: { type: String, default: null },
     questionIds: { type: [String], default: [] },
     published: { type: Boolean, default: true },
+    negativeMarking: { type: Boolean, default: false },
+    negativeMarkValue: { type: Number, default: 0.25 },
     selection: { type: mongoose.Schema.Types.Mixed, default: null },
     selectionRules: { type: mongoose.Schema.Types.Mixed, default: null },
     createdAt: { type: String },

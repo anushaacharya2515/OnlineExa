@@ -28,7 +28,8 @@ function isMatrixEqual(expected, received) {
   });
 }
 
-export function gradeAttempt(questions, answersByQuestionId) {
+export function gradeAttempt(questions, answersByQuestionId, options = {}) {
+  const { negativeMarking = false, negativeMarkValue = 0.25 } = options;
   let score = 0;
   const details = [];
 
@@ -74,7 +75,17 @@ export function gradeAttempt(questions, answersByQuestionId) {
       correct = isMatrixEqual(q.correctAnswer, answer);
     }
 
-    if (correct) score += Number(q.marks || 1);
+    const qMarks = Number(q.marks || 1);
+    const answered = answer !== null && answer !== undefined &&
+      !(typeof answer === "string" && answer.trim() === "") &&
+      !(Array.isArray(answer) && answer.length === 0);
+
+    if (correct) {
+      score += qMarks;
+    } else if (negativeMarking && answered) {
+      // Only deduct if student actually attempted the question
+      score -= Number(negativeMarkValue) * qMarks;
+    }
 
     details.push({
       questionId: q.id,

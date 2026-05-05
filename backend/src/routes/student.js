@@ -211,7 +211,10 @@ export default function studentRouter(io) {
       ? attempt.questionIds
       : exam.questionIds;
     const examQuestions = await Question.find({ id: { $in: questionIds } }).lean();
-    const graded = gradeAttempt(examQuestions, attempt.answers || {});
+    const graded = gradeAttempt(examQuestions, attempt.answers || {}, {
+      negativeMarking: exam?.negativeMarking || false,
+      negativeMarkValue: exam?.negativeMarkValue || 0.25
+    });
 
     const submitted = {
       ...attempt,

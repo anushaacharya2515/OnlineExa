@@ -35,6 +35,8 @@ const QuestionSchema = new mongoose.Schema(
     difficulty: { type: String, required: true },
     marks: { type: Number, default: 1 },
     generatedByAI: { type: Boolean, default: false },
+    source: { type: String, enum: ["manual", "ai", "csv"], default: "manual" },
+    isApproved: { type: Boolean, default: true },
     createdAt: { type: String },
     updatedAt: { type: String }
   },
