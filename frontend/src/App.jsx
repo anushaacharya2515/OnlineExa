@@ -11,13 +11,11 @@ import ManageModules from "./pages/ManageModules";
 import AdminResults from "./pages/AdminResults";
 import AdminStudents from "./pages/AdminStudents";
 import AdminSettings from "./pages/AdminSettings";
-import StudentDashboard from "./pages/StudentDashboard";
 import StudentExamsPage from "./pages/StudentExamsPage";
-import ResultPage from "./pages/ResultPage";
-import StudentAttemptResult from "./pages/StudentAttemptResult";
 import ExamPage from "./pages/ExamPage";
+import StudentExamGuidelines from "./pages/StudentExamGuidelines";
+import StudentProfilePage from "./pages/StudentProfilePage";
 import AIQuestionGenerator from "./pages/AIQuestionGenerator";
-import QuestionBankPage from "./pages/QuestionBankPage";
 
 function ProtectedRoute({ role, children }) {
   const { session } = useAuth();
@@ -33,7 +31,7 @@ export default function App() {
     <Routes>
       <Route path="/login" element={<LoginPage />} />
 
-      {/* ── Admin Routes ── */}
+      {/* Admin Routes */}
       <Route path="/admin" element={<ProtectedRoute role="admin"><AdminDashboard /></ProtectedRoute>} />
       <Route path="/admin/question-bank" element={<ProtectedRoute role="admin"><QuestionBank /></ProtectedRoute>} />
       <Route path="/admin/question-bank/module/:moduleName" element={<ProtectedRoute role="admin"><ModuleQuestionBank /></ProtectedRoute>} />
@@ -46,12 +44,14 @@ export default function App() {
       <Route path="/admin/students" element={<ProtectedRoute role="admin"><AdminStudents /></ProtectedRoute>} />
       <Route path="/admin/settings" element={<ProtectedRoute role="admin"><AdminSettings /></ProtectedRoute>} />
 
-      {/* ── Student Routes ── */}
-      <Route path="/student" element={<ProtectedRoute role="student"><StudentDashboard /></ProtectedRoute>} />
+      {/* Student Routes */}
+      <Route path="/student" element={<ProtectedRoute role="student"><Navigate to="/student/exams" replace /></ProtectedRoute>} />
       <Route path="/student/exams" element={<ProtectedRoute role="student"><StudentExamsPage /></ProtectedRoute>} />
-      <Route path="/student/results" element={<ProtectedRoute role="student"><ResultPage /></ProtectedRoute>} />
-      <Route path="/student/result/:attemptId" element={<ProtectedRoute role="student"><StudentAttemptResult /></ProtectedRoute>} />
-      <Route path="/student/question-bank" element={<ProtectedRoute role="student"><QuestionBankPage /></ProtectedRoute>} />
+      <Route path="/student/exams/:examId/guidelines" element={<ProtectedRoute role="student"><StudentExamGuidelines /></ProtectedRoute>} />
+      <Route path="/student/profile" element={<ProtectedRoute role="student"><StudentProfilePage /></ProtectedRoute>} />
+      <Route path="/student/results" element={<ProtectedRoute role="student"><Navigate to="/student/exams" replace /></ProtectedRoute>} />
+      <Route path="/student/result/:attemptId" element={<ProtectedRoute role="student"><Navigate to="/student/exams" replace /></ProtectedRoute>} />
+      <Route path="/student/question-bank" element={<ProtectedRoute role="student"><Navigate to="/student/exams" replace /></ProtectedRoute>} />
       <Route path="/exam/:attemptId" element={<ProtectedRoute role="student"><ExamPage /></ProtectedRoute>} />
 
       <Route path="*" element={<Navigate to={session ? `/${session.user.role}` : "/login"} replace />} />

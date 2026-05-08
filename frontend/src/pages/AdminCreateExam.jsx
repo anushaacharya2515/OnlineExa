@@ -7,6 +7,8 @@ import QuestionSelectorModal from "../components/QuestionSelectorModal";
 import Dropdowns from "../components/Dropdowns";
 import Modal from "../components/Modal";
 
+const PREFS_KEY = "admin_exam_preferences";
+
 function SurfaceCard({ className = "", children }) {
   return <section className={`create-exam-section ${className}`.trim()}>{children}</section>;
 }
@@ -30,6 +32,19 @@ function InputField({ label, className = "", children }) {
 }
 
 export default function AdminCreateExam() {
+  const savedPrefs = useMemo(() => {
+    try {
+      const raw = localStorage.getItem(PREFS_KEY);
+      const parsed = raw ? JSON.parse(raw) : {};
+      return {
+        negativeMarking: Boolean(parsed.negativeMarking),
+        negativeMarkValue: Number(parsed.negativeMarkValue ?? 0.25)
+      };
+    } catch {
+      return { negativeMarking: false, negativeMarkValue: 0.25 };
+    }
+  }, []);
+
   const { session } = useAuth();
   const token = session.token;
   const [error, setError] = useState("");
@@ -54,8 +69,8 @@ export default function AdminCreateExam() {
     endDate: "",
     marksPerQuestion: 1,
     randomizeQuestions: true,
-    negativeMarking: false,
-    negativeMarkValue: 0.25,
+    negativeMarking: savedPrefs.negativeMarking,
+    negativeMarkValue: savedPrefs.negativeMarkValue,
     selectionRules: { counts: { Easy: 5, Medium: 3, Hard: 2 } }
   });
 
@@ -161,6 +176,8 @@ export default function AdminCreateExam() {
           easyCount: Number(examDraft.selectionRules.counts.Easy || 0),
           mediumCount: Number(examDraft.selectionRules.counts.Medium || 0),
           hardCount: Number(examDraft.selectionRules.counts.Hard || 0),
+          negativeMarking: Boolean(examDraft.negativeMarking),
+          negativeMarkValue: Number(examDraft.negativeMarkValue || 0.25),
           preview: true
         };
         const res = await apiClient.post("/exams/auto-generate", payload, withAuth(token));
@@ -206,6 +223,8 @@ export default function AdminCreateExam() {
         selectedQuestions: selectedIds,
         marksPerQuestion: Number(examDraft.marksPerQuestion || 1),
         randomizeQuestions: examDraft.randomizeQuestions,
+        negativeMarking: Boolean(examDraft.negativeMarking),
+        negativeMarkValue: Number(examDraft.negativeMarkValue || 0.25),
         startDate: examDraft.startDate || null,
         endDate: examDraft.endDate || null
       };
@@ -221,8 +240,8 @@ export default function AdminCreateExam() {
         endDate: "",
         marksPerQuestion: 1,
         randomizeQuestions: true,
-        negativeMarking: false,
-        negativeMarkValue: 0.25,
+        negativeMarking: savedPrefs.negativeMarking,
+        negativeMarkValue: savedPrefs.negativeMarkValue,
         selectionRules: { counts: { Easy: 5, Medium: 3, Hard: 2 } }
       });
       setStep(1);
@@ -258,6 +277,8 @@ export default function AdminCreateExam() {
         easyCount: Number(examDraft.selectionRules.counts.Easy || 0),
         mediumCount: Number(examDraft.selectionRules.counts.Medium || 0),
         hardCount: Number(examDraft.selectionRules.counts.Hard || 0),
+        negativeMarking: Boolean(examDraft.negativeMarking),
+        negativeMarkValue: Number(examDraft.negativeMarkValue || 0.25),
         startDate: examDraft.startDate || null,
         endDate: examDraft.endDate || null
       };
@@ -271,8 +292,8 @@ export default function AdminCreateExam() {
         endDate: "",
         marksPerQuestion: 1,
         randomizeQuestions: true,
-        negativeMarking: false,
-        negativeMarkValue: 0.25,
+        negativeMarking: savedPrefs.negativeMarking,
+        negativeMarkValue: savedPrefs.negativeMarkValue,
         selectionRules: { counts: { Easy: 5, Medium: 3, Hard: 2 } }
       });
       setPreviewQuestions([]);
@@ -357,6 +378,8 @@ export default function AdminCreateExam() {
             easyCount: Number(examDraft.selectionRules.counts.Easy || 0),
             mediumCount: Number(examDraft.selectionRules.counts.Medium || 0),
             hardCount: Number(examDraft.selectionRules.counts.Hard || 0),
+            negativeMarking: Boolean(examDraft.negativeMarking),
+            negativeMarkValue: Number(examDraft.negativeMarkValue || 0.25),
             preview: true
           };
           const res = await apiClient.post("/exams/auto-generate", payload, withAuth(token));
@@ -490,6 +513,8 @@ export default function AdminCreateExam() {
       endDate: "",
       marksPerQuestion: 1,
       randomizeQuestions: true,
+      negativeMarking: savedPrefs.negativeMarking,
+      negativeMarkValue: savedPrefs.negativeMarkValue,
       selectionRules: { counts: { Easy: 5, Medium: 3, Hard: 2 } }
     });
   }
@@ -626,6 +651,27 @@ export default function AdminCreateExam() {
                   {examDraft.randomizeQuestions ? "Randomize Question Order" : "Keep Current Order"}
                 </button>
               </div>
+              <div className="field-block">
+                <label>Negative Marking</label>
+                <button
+                  type="button"
+                  className={`toggle-chip ${examDraft.negativeMarking ? "active" : ""}`}
+                  onClick={() => updateExamDraft({ negativeMarking: !examDraft.negativeMarking })}
+                >
+                  {examDraft.negativeMarking ? "Enabled" : "Disabled"}
+                </button>
+              </div>
+              <InputField label="Negative Mark Value">
+                <input
+                  type="number"
+                  min="0"
+                  max="1"
+                  step="0.05"
+                  value={examDraft.negativeMarkValue}
+                  onChange={(e) => updateExamDraft({ negativeMarkValue: e.target.value })}
+                  disabled={!examDraft.negativeMarking}
+                />
+              </InputField>
               <div className="field-block field-span-2">
                 <label>Question Count By Difficulty</label>
                 {mode === "auto" ? (
@@ -667,6 +713,7 @@ export default function AdminCreateExam() {
               <div className="review-item"><span>Modules</span><strong>{selectedModuleNames.length || 0}</strong></div>
               <div className="review-item"><span>Topics</span><strong>{selectedTopicNames.length || 0}</strong></div>
               <div className="review-item"><span>Mode</span><strong>{mode === "auto" ? "Auto Generate" : "Manual Selection"}</strong></div>
+              <div className="review-item"><span>Negative Marking</span><strong>{examDraft.negativeMarking ? `Yes (${examDraft.negativeMarkValue})` : "No"}</strong></div>
               <div className="review-item"><span>Estimated</span><strong>{estimatedCount} Q / {estimatedMarks} Marks</strong></div>
             </div>
 

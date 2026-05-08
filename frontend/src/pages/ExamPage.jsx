@@ -172,9 +172,9 @@ export default function ExamPage() {
     submittedRef.current=true;
     try{
       await api(`/student/attempts/${attemptId}/answers`,{token,method:"PATCH",body:{answers}});
-      const res=await api(`/student/attempts/${attemptId}/submit`,{token,method:"POST"});
+      await api(`/student/attempts/${attemptId}/submit`,{token,method:"POST"});
       if(auto)alert("Time is up. Exam auto-submitted.");
-      navigate(`/student/result/${res.id}`);
+      navigate("/student/exams");
     }catch(err){ submittedRef.current=false; setError(err.message); }
   }
   function goNext(){
@@ -183,26 +183,23 @@ export default function ExamPage() {
   }
 
   const initials=(session.user.name||session.user.email||"S").slice(0,1).toUpperCase();
+  const rawStudentId = String(session.user.id || "");
+  const displayStudentId = rawStudentId
+    ? `STU-${rawStudentId.replace(/-/g, "").slice(0, 6).toUpperCase()}`
+    : "STU-NA";
+  const profilePhotoUrl = session.user.profilePhotoUrl || "";
 
   return (
     <div className="ep2-shell">
       {/* Top bar */}
       <header className="ep2-topbar">
         <div className="ep2-topbar-left">
-          <div className="ep2-avatar">{initials}</div>
           <div className="ep2-topbar-info">
             <span className="ep2-exam-name">{exam?.title||exam?.examName||"Exam"}</span>
-            <span className={`ep2-timer ${isLastFive?"ep2-timer--warn":""}`}>
-              ⏱ Time Left: <Timer remainingMs={remainingMs} isWarning={isLastFive}/>
-            </span>
           </div>
         </div>
         <div className="ep2-topbar-right">
           {tabCount>0&&<span className="ep2-warn-chip">⚠ {tabCount}/{TAB_LIMIT}</span>}
-          <div className="ep2-user-chip">
-            <div className="ep2-user-icon">{initials}</div>
-            <span className="ep2-user-name">{session.user.name||session.user.email}</span>
-          </div>
         </div>
       </header>
 
@@ -232,6 +229,9 @@ export default function ExamPage() {
           {/* Question card */}
           <div className="ep2-question-card">
             {!currentQ ? <div className="ep2-empty">No questions loaded.</div> : (<>
+              <div className={`ep2-inline-timer ${isLastFive?"ep2-timer--warn":""}`}>
+                Time Left: <Timer remainingMs={remainingMs} isWarning={isLastFive}/>
+              </div>
               <div className="ep2-q-meta">
                 <span className="ep2-q-type">{currentQ.type?.replace(/_/g," ")||"Question"}</span>
                 <span className="ep2-q-num">Question No: {currentIndex+1} / {questions.length}</span>
@@ -318,10 +318,14 @@ export default function ExamPage() {
         {/* Right */}
         <aside className="ep2-right">
           <div className="ep2-student-card">
-            <div className="ep2-student-avatar">{initials}</div>
+            {profilePhotoUrl ? (
+              <img className="ep2-student-photo" src={profilePhotoUrl} alt="Candidate" />
+            ) : (
+              <div className="ep2-student-avatar">{initials}</div>
+            )}
             <div className="ep2-student-info">
               <span className="ep2-student-name">{session.user.name||session.user.email}</span>
-              <span className="ep2-student-id">ID: {session.user.id||"—"}</span>
+              <span className="ep2-student-id">ID: {displayStudentId}</span>
             </div>
           </div>
           <NavigationPanel questions={questions} answers={answers} reviewMap={reviewMap}
@@ -373,3 +377,6 @@ export default function ExamPage() {
     </div>
   );
 }
+
+
+

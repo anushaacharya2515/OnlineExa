@@ -18,6 +18,7 @@ import { gradeAttempt } from "./services/grading.js";
 import { Attempt } from "./models/Attempt.js";
 import { Exam } from "./models/Exam.js";
 import { Question } from "./models/Question.js";
+import { cleanupOldData, getRetentionMonths } from "./services/dataRetention.js";
 
 dotenv.config();
 
@@ -74,6 +75,19 @@ function autoSubmitExpiredAttempts() {
   });
 }
 
+async function runRetentionCleanup() {
+  try {
+    const report = await cleanupOldData(getRetentionMonths());
+    if (report.deletedAttempts || report.deletedResults) {
+      console.log(
+        `[Retention] Deleted attempts=${report.deletedAttempts}, results=${report.deletedResults}, cutoff=${report.cutoffIso}`
+      );
+    }
+  } catch (err) {
+    console.error("[Retention] Cleanup failed:", err.message);
+  }
+}
+
 io.on("connection", (socket) => {
   socket.emit("server:connected", { message: "Realtime channel connected" });
 });
@@ -83,10 +97,13 @@ connectDB().then(async () => {
   await ensureAdmin();
   await ensureReferenceQuestionBank();
   setInterval(autoSubmitExpiredAttempts, 5000);
+  runRetentionCleanup();
+  setInterval(runRetentionCleanup, 24 * 60 * 60 * 1000);
 
   server.listen(PORT, () => {
     console.log(`Backend running on http://localhost:${PORT}`);
     console.log("Default admin: admin@exam.com / admin123");
+    console.log(`Data retention: ${getRetentionMonths()} months`);
   });
 }).catch((err) => {
   console.error("Failed to start server:", err.message);

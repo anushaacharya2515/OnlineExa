@@ -6,6 +6,7 @@ import { Question } from "../models/Question.js";
 import { Exam } from "../models/Exam.js";
 import { Attempt } from "../models/Attempt.js";
 import { User } from "../models/User.js";
+import { cleanupOldData, getRetentionMonths } from "../services/dataRetention.js";
 
 const router = express.Router();
 
@@ -346,6 +347,11 @@ router.get("/students", (req, res) => {
         name: s.name || s.email,
         email: s.email,
         mobileNumber: s.mobileNumber || "",
+        dob: s.dob || "",
+        profilePhotoUrl: s.profilePhotoUrl || "",
+        resumeUrl: s.resumeUrl || "",
+        address: s.address || "",
+        college: s.college || "",
         registeredAt: s.createdAt || "",
         examsTaken: uniqueExams.size,
         averageScore: avgScore,
@@ -354,6 +360,15 @@ router.get("/students", (req, res) => {
     });
 
     res.json(rows);
+  });
+});
+
+router.post("/maintenance/cleanup-old-data", async (req, res) => {
+  const months = Number(req.body?.months || getRetentionMonths());
+  const report = await cleanupOldData(months);
+  res.json({
+    message: `Cleanup complete for data older than ${report.retentionMonths} months.`,
+    ...report
   });
 });
 

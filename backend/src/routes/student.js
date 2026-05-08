@@ -6,6 +6,7 @@ import { buildRetakeQuestionSetMongo } from "../services/retakeQuestions.js";
 import { Exam } from "../models/Exam.js";
 import { Question } from "../models/Question.js";
 import { Attempt } from "../models/Attempt.js";
+import { User } from "../models/User.js";
 
 export default function studentRouter(io) {
   const router = express.Router();
@@ -70,10 +71,50 @@ export default function studentRouter(io) {
       subject: e.subject,
       durationMinutes: e.durationMinutes,
       totalQuestions: (e.questionIds || []).length,
+      totalMarks: Number(e.totalMarks || 0),
+      negativeMarking: Boolean(e.negativeMarking),
+      negativeMarkValue: Number(e.negativeMarkValue || 0.25),
       startDate: e.startDate,
       endDate: e.endDate,
       attempted: attemptedExamIds.has(e.id)
     })));
+  });
+
+  router.get("/exams/:examId", async (req, res) => {
+    const exam = await Exam.findOne({ id: req.params.examId, published: true }).lean();
+    if (!exam) return res.status(404).json({ message: "Exam not found" });
+
+    const now = Date.now();
+    if (exam.startDate && now < new Date(exam.startDate).getTime()) {
+      return res.status(403).json({ message: "Exam has not started yet" });
+    }
+    if (exam.endDate && now > new Date(exam.endDate).getTime()) {
+      return res.status(403).json({ message: "Exam has ended" });
+    }
+
+    const alreadyAttempted = await Attempt.findOne({
+      examId: exam.id,
+      studentId: req.user.userId,
+      status: { $in: ["in_progress", "submitted"] }
+    }).lean();
+
+    const totalQuestions = Array.isArray(exam.questionIds) ? exam.questionIds.length : 0;
+    const totalMarks = Number(exam.totalMarks || 0);
+
+    res.json({
+      id: exam.id,
+      title: exam.title,
+      examName: exam.examName,
+      subject: exam.subject,
+      durationMinutes: Number(exam.durationMinutes || 0),
+      totalQuestions,
+      totalMarks,
+      negativeMarking: Boolean(exam.negativeMarking),
+      negativeMarkValue: Number(exam.negativeMarkValue || 0.25),
+      startDate: exam.startDate || null,
+      endDate: exam.endDate || null,
+      attempted: Boolean(alreadyAttempted)
+    });
   });
 
   router.get("/question-bank", (req, res) => {
@@ -240,6 +281,55 @@ export default function studentRouter(io) {
   router.get("/results", async (req, res) => {
     const mine = await Attempt.find({ studentId: req.user.userId, status: "submitted" }).lean();
     res.json(mine);
+  });
+
+  router.get("/profile", async (req, res) => {
+    const user = await User.findOne({ id: req.user.userId }).lean();
+    if (!user) return res.status(404).json({ message: "Student not found" });
+    res.json({
+      id: user.id,
+      name: user.name || "",
+      email: user.email || "",
+      mobileNumber: user.mobileNumber || "",
+      dob: user.dob || "",
+      profilePhotoUrl: user.profilePhotoUrl || "",
+      resumeUrl: user.resumeUrl || "",
+      address: user.address || "",
+      college: user.college || ""
+    });
+  });
+
+  router.put("/profile", async (req, res) => {
+    const payload = {
+      name: String(req.body.name || "").trim(),
+      mobileNumber: String(req.body.mobileNumber || "").trim(),
+      dob: String(req.body.dob || "").trim(),
+      profilePhotoUrl: String(req.body.profilePhotoUrl || "").trim(),
+      resumeUrl: String(req.body.resumeUrl || "").trim(),
+      address: String(req.body.address || "").trim(),
+      college: String(req.body.college || "").trim()
+    };
+
+    if (!payload.name) return res.status(400).json({ message: "Name is required" });
+
+    const updated = await User.findOneAndUpdate(
+      { id: req.user.userId },
+      { ...payload, updatedAt: new Date().toISOString() },
+      { new: true }
+    ).lean();
+    if (!updated) return res.status(404).json({ message: "Student not found" });
+
+    res.json({
+      id: updated.id,
+      name: updated.name || "",
+      email: updated.email || "",
+      mobileNumber: updated.mobileNumber || "",
+      dob: updated.dob || "",
+      profilePhotoUrl: updated.profilePhotoUrl || "",
+      resumeUrl: updated.resumeUrl || "",
+      address: updated.address || "",
+      college: updated.college || ""
+    });
   });
 
   return router;

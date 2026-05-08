@@ -13,12 +13,21 @@ export function AuthProvider({ children }) {
     localStorage.setItem("exam_session", JSON.stringify(payload));
   };
 
+  const updateSessionUser = (userPatch) => {
+    setSession((prev) => {
+      if (!prev) return prev;
+      const next = { ...prev, user: { ...prev.user, ...userPatch } };
+      localStorage.setItem("exam_session", JSON.stringify(next));
+      return next;
+    });
+  };
+
   const logout = () => {
     setSession(null);
     localStorage.removeItem("exam_session");
   };
 
-  const value = useMemo(() => ({ session, login, logout }), [session]);
+  const value = useMemo(() => ({ session, login, logout, updateSessionUser }), [session]);
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
 }
 

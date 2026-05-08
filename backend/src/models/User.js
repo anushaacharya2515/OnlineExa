@@ -8,6 +8,11 @@ const UserSchema = new mongoose.Schema(
     passwordHash: { type: String, required: true },
     role: { type: String, enum: ["admin", "student"], default: "student" },
     mobileNumber: { type: String, default: "" },
+    dob: { type: String, default: "" },
+    profilePhotoUrl: { type: String, default: "" },
+    resumeUrl: { type: String, default: "" },
+    address: { type: String, default: "" },
+    college: { type: String, default: "" },
     createdAt: { type: String },
     resetToken: { type: String, default: null },
     resetTokenExpiry: { type: Number, default: null }

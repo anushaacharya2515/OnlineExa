@@ -60,9 +60,13 @@ export default function AdminStudents() {
           <table className="data-table">
             <thead>
               <tr>
+                <th>Photo</th>
                 <th>Full Name</th>
                 <th>Email</th>
                 <th>Mobile</th>
+                <th>DOB</th>
+                <th>College</th>
+                <th>Resume</th>
                 <th>Registered</th>
                 <th>Exams Taken</th>
                 <th>Average Score</th>
@@ -72,14 +76,24 @@ export default function AdminStudents() {
             <tbody>
               {filtered.length === 0 && (
                 <tr>
-                  <td colSpan="7" className="empty-cell">No students found.</td>
+                  <td colSpan="11" className="empty-cell">No students found.</td>
                 </tr>
               )}
               {filtered.map((s) => (
                 <tr key={s.id}>
+                  <td>
+                    {s.profilePhotoUrl ? (
+                      <img src={s.profilePhotoUrl} alt={s.name} style={{ width: 36, height: 36, borderRadius: "50%", objectFit: "cover" }} />
+                    ) : "-"}
+                  </td>
                   <td>{s.name}</td>
                   <td>{s.email}</td>
                   <td>{s.mobileNumber || "-"}</td>
+                  <td>{s.dob || "-"}</td>
+                  <td>{s.college || "-"}</td>
+                  <td>
+                    {s.resumeUrl ? <a href={s.resumeUrl} target="_blank" rel="noreferrer">View Resume</a> : "-"}
+                  </td>
                   <td>{formatDateTime(s.registeredAt)}</td>
                   <td>{s.examsTaken}</td>
                   <td>{s.averageScore}</td>

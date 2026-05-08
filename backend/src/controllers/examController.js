@@ -19,6 +19,8 @@ function normalizeExamBody(body) {
     duration: Number(body.duration ?? body.durationMinutes ?? body.duration_minutes ?? 0),
     totalMarks: Number(body.total_marks ?? body.totalMarks ?? 0),
     totalQuestions: Number(body.total_questions ?? body.totalQuestions ?? 0),
+    negativeMarking: Boolean(body.negative_marking ?? body.negativeMarking ?? false),
+    negativeMarkValue: Number(body.negative_mark_value ?? body.negativeMarkValue ?? 0.25),
     startDate: body.start_date ?? body.startDate ?? null,
     endDate: body.end_date ?? body.endDate ?? null,
     questionIds: Array.isArray(body.questions ?? body.questionIds) ? (body.questions ?? body.questionIds) : []
@@ -154,6 +156,8 @@ export async function autoGenerateExam(req, res) {
     easyCount = 0,
     mediumCount = 0,
     hardCount = 0,
+    negativeMarking = false,
+    negativeMarkValue = 0.25,
     preview = false,
     startDate = null,
     endDate = null
@@ -210,6 +214,8 @@ export async function autoGenerateExam(req, res) {
     endDate,
     questionIds,
     published: true,
+    negativeMarking: Boolean(negativeMarking),
+    negativeMarkValue: Number(negativeMarkValue || 0.25),
     selectionRules: { subject: module, topic, moduleIds: resolvedModuleIds, topicIds: resolvedTopicIds, subTopicId, counts },
     createdAt: new Date().toISOString()
   };
@@ -224,6 +230,8 @@ export async function manualCreateExam(req, res) {
     name,
     duration,
     selectedQuestions = [],
+    negativeMarking = false,
+    negativeMarkValue = 0.25,
     startDate = null,
     endDate = null
   } = req.body;
@@ -255,6 +263,8 @@ export async function manualCreateExam(req, res) {
     endDate,
     questionIds: selectedQuestions,
     published: true,
+    negativeMarking: Boolean(negativeMarking),
+    negativeMarkValue: Number(negativeMarkValue || 0.25),
     createdAt: new Date().toISOString()
   };
 
@@ -287,6 +297,8 @@ export function createExam(req, res) {
       endDate: norm.endDate,
       questionIds: norm.questionIds,
       published: true,
+      negativeMarking: norm.negativeMarking,
+      negativeMarkValue: norm.negativeMarkValue,
       createdAt: new Date().toISOString()
     };
     Exam.create(exam).then((created) => res.status(201).json(created));
@@ -343,6 +355,8 @@ export function generateExam(req, res) {
       endDate: norm.endDate,
       questionIds: picked.questionIds,
       published: true,
+      negativeMarking: norm.negativeMarking,
+      negativeMarkValue: norm.negativeMarkValue,
       selectionRules: rules,
       createdAt: new Date().toISOString()
     };
@@ -371,7 +385,10 @@ export function submitExam(req, res) {
     }
 
     const examQuestions = await Question.find({ id: { $in: exam.questionIds } }).lean();
-    const graded = gradeAttempt(examQuestions, answers);
+    const graded = gradeAttempt(examQuestions, answers, {
+      negativeMarking: exam?.negativeMarking || false,
+      negativeMarkValue: exam?.negativeMarkValue || 0.25
+    });
     const correctCount = graded.details.filter((d) => d.correct).length;
     const wrongCount = graded.details.filter((d) => !d.correct).length;
     const percentage = examQuestions.length ? Math.round((graded.score / (exam.totalMarks || graded.score || 1)) * 100) : 0;

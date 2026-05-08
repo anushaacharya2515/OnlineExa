@@ -43,7 +43,21 @@ router.post("/login", async (req, res) => {
   if (!ok) return res.status(401).json({ message: "Invalid credentials" });
 
   const token = signToken(user);
-  res.json({ token, user: { id: user.id, name: user.name, email: user.email, role: user.role } });
+  res.json({
+    token,
+    user: {
+      id: user.id,
+      name: user.name,
+      email: user.email,
+      role: user.role,
+      mobileNumber: user.mobileNumber || "",
+      dob: user.dob || "",
+      profilePhotoUrl: user.profilePhotoUrl || "",
+      resumeUrl: user.resumeUrl || "",
+      address: user.address || "",
+      college: user.college || ""
+    }
+  });
 });
 
 // POST /auth/forgot-password — generates a 6-char reset code
